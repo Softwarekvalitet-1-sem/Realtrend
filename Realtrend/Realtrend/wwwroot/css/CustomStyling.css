@@ -1,0 +1,19 @@
+﻿body {
+    background-color: #83A6B7;
+    color: white; /* Set text color to contrast with the background */
+    padding: 10px;
+}
+
+.custom-div-style {
+    background-color: #D9D9D9;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 700px;
+}
+
+.custom-app-bar {
+    background-color: #D9D9D9;
+    height: auto;
+
+}

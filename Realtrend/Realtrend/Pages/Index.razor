@@ -1,9 +1,61 @@
 ﻿@page "/"
 
 <PageTitle>Index</PageTitle>
+<div class="d-flex justify-content-center">
 
-<h1>Hello, world!</h1>
 
-Welcome to your new app.
+<div class="p-4" style="max-width: 700px; border-radius:30px; background-color: @GlobalColors.CustomBackgroundColor;">
+        <div class="d-flex justify-content-center">
+            <h6 class="text-black">INDTAST DIN ADRESSE</h6>
+        </div>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+        <form @onsubmit="OnSubmit">
+            <div class="form-row d-flex justify-content-between mb-3">
+                <div class="col-md-6 text-md-left">
+                    <label class="text-black" for="street">Vej:</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="street" name="street" />
+                </div>
+            </div>
+
+            <div class="form-row d-flex justify-content-between mb-3">
+                <div class="col-md-6 text-md-left">
+                    <label class="text-black" for="houseNumber">Husnummer:</label>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <input type="text" class="form-control" id="houseNumber" name="houseNumber" />
+                </div>
+            </div>
+@inject NavigationManager NavigationManager
+            <div class="form-row d-flex justify-content-between mb-3">
+                <div class="col-md-6 text-md-left">
+                    <label class="text-black" for="zipCode">Postnummer:</label>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <input type="text" class="form-control" id="zipCode" name="zipCode" />
+                </div>
+            </div>
+
+            <div class="form-row d-flex justify-content-between mb-3">
+                <div class="col-md-6 text-md-left">
+                    <label class="text-black" for="city">By:</label>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <input type="text" class="form-control" id="city" name="city" />
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <input type="submit" value="Find boligvurderinger" class="btn btn-primary" style="background-color: @GlobalColors.CustomApplicationColor;" />
+            </div>
+        </form>
+</div>
+</div>
+
+@code {
+    private void OnSubmit()
+    {
+        NavigationManager.NavigateTo("/chartpage");
+    }
+}
