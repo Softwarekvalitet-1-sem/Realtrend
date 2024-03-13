@@ -1,10 +1,16 @@
 ﻿@page "/"
 
+@using Realtrend.Interfaces;
+@using Realtrend.Models;
+
+@inject IAddress AddressService;
+@inject NavigationManager NavigationManager
+
 <PageTitle>Index</PageTitle>
 <div class="d-flex justify-content-center">
 
 
-<div class="p-4" style="max-width: 700px; border-radius:30px; background-color: @GlobalColors.CustomBackgroundColor;">
+    <div class="p-4" style="max-width: 700px; border-radius:30px; background-color: @GlobalColors.CustomBackgroundColor;">
         <div class="d-flex justify-content-center">
             <h6 class="text-black">INDTAST DIN ADRESSE</h6>
         </div>
@@ -12,28 +18,20 @@
         <form @onsubmit="OnSubmit">
             <div class="form-row d-flex justify-content-between mb-3">
                 <div class="col-md-6 text-md-left">
-                    <label class="text-black" for="street">Vej:</label>
+                    <label class="text-black" for="street">Vej og husnummer:</label>
                 </div>
                 <div class="col-md-6">
-                    <input type="text" class="form-control" id="street" name="street" />
+                    <input type="text" class="form-control" id="street" @bind="addressForm.Street" />
                 </div>
             </div>
 
-            <div class="form-row d-flex justify-content-between mb-3">
-                <div class="col-md-6 text-md-left">
-                    <label class="text-black" for="houseNumber">Husnummer:</label>
-                </div>
-                <div class="col-md-6 text-md-right">
-                    <input type="text" class="form-control" id="houseNumber" name="houseNumber" />
-                </div>
-            </div>
-@inject NavigationManager NavigationManager
+
             <div class="form-row d-flex justify-content-between mb-3">
                 <div class="col-md-6 text-md-left">
                     <label class="text-black" for="zipCode">Postnummer:</label>
                 </div>
                 <div class="col-md-6 text-md-right">
-                    <input type="text" class="form-control" id="zipCode" name="zipCode" />
+                    <input type="text" class="form-control" id="zipCode" @bind="addressForm.ZipCode" />
                 </div>
             </div>
 
@@ -42,7 +40,7 @@
                     <label class="text-black" for="city">By:</label>
                 </div>
                 <div class="col-md-6 text-md-right">
-                    <input type="text" class="form-control" id="city" name="city" />
+                    <input type="text" class="form-control" id="city" @bind="addressForm.City" />
                 </div>
             </div>
 
@@ -50,12 +48,16 @@
                 <input type="submit" value="Find boligvurderinger" class="btn btn-primary" style="background-color: @GlobalColors.CustomApplicationColor;" />
             </div>
         </form>
-</div>
+    </div>
 </div>
 
 @code {
-    private void OnSubmit()
+    private AddressForm addressForm = new AddressForm();
+
+    private async void OnSubmit()
     {
+        var addresses = await AddressService.GetAddressResponseAsync(addressForm.Street);
+
         NavigationManager.NavigateTo("/chartpage");
     }
 }
