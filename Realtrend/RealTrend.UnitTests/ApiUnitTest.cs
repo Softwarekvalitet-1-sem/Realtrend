@@ -3,6 +3,7 @@ using Moq.Protected;
 using Newtonsoft.Json;
 using Realtrend.Models;
 using Realtrend.Services;
+using RealTrend.UnitTests.DataClasses;
 using System.Net;
 
 namespace RealTrend.UnitTests
@@ -51,7 +52,7 @@ namespace RealTrend.UnitTests
         // Vi sammenligner den forventede Address med den faktiske Address.
         [Theory]
         [MemberData(nameof(GetAddressDetail))]
-        public async Task GetAddress_ReturnsCorrectAddress(Address expectedAddress)
+        public async Task GetAddressDetail_Should_Return_Correct_Address_Details(Address expectedAddress)
         {
             // Arrange
             var mockHttpMessageHandler = new Mock<HttpMessageHandler>();
@@ -107,5 +108,15 @@ namespace RealTrend.UnitTests
         }
             };
         }
+
+        [Theory]
+        [ClassData(typeof(UserAddressTestData))]
+        public async Task IsValidAddress_ShouldWorkWithVariousInputs(string address, bool expected)
+        {
+            var addressService = new AddressService(new HttpClient());
+            bool result = await addressService.ValidateAddress(address);
+            Assert.Equal(expected, result);
+        }
+
     }
 }
