@@ -58,6 +58,8 @@
     {
         var addresses = await AddressService.GetAddressResponseAsync(addressForm.Street);
 
+        var addressId = addresses.First().Id;
+
         NavigationManager.NavigateTo("/chartpage");
     }
 }
