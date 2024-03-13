@@ -17,10 +17,7 @@ namespace Realtrend.Services
             return "";
 
         }
-        public async Task<Address> GetAddress(string id)
-        {
-            return new Address();
-        }
+
 
     }
 }

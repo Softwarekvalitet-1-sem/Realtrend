@@ -9,6 +9,11 @@ namespace RealTrend.UnitTests
 {
     public class Api_unit_tests
     {
+        // Mock af HttpClient og test af GetIdFromAddress metode.
+        // Vi opretter en mock af HttpClient for at simulere et kald til en ekstern API.
+        // Vi opretter en HttpResponseMessage med statuskode OK og en Address som content.
+        // Vi opretter en AddressService med vores mock HttpClient og kalder GetIdFromAddress metoden.
+        // Vi sammenligner den forventede Id med den faktiske Id.
         [Theory]
         [InlineData("Seebladsgade 1", "66a973e3-a800-4e8d-869a-879621bcf3bc")]
         public async Task GetIdFromAddress_ValidAddress_ReturnsCorrectId(string address, string expectedId)
@@ -39,7 +44,11 @@ namespace RealTrend.UnitTests
             // Assert
             Assert.Equal(expectedId, actualId);
         }
-
+        // Mock af HttpClient og test af GetAddressDetail metode
+        // Vi opretter en mock af HttpClient for at simulere et kald til en ekstern API.
+        // Vi opretter en HttpResponseMessage med statuskode OK og en Address som content.
+        // Vi opretter en AddressDetailService med vores mock HttpClient og kalder GetAddressDetail metoden fra vores service.
+        // Vi sammenligner den forventede Address med den faktiske Address.
         [Theory]
         [MemberData(nameof(GetAddressDetail))]
         public async Task GetAddress_ReturnsCorrectAddress(Address expectedAddress)
@@ -98,8 +107,5 @@ namespace RealTrend.UnitTests
         }
             };
         }
-
-
-
     }
 }
