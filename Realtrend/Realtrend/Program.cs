@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Realtrend.Data;
+using Realtrend.Interfaces;
+using Realtrend.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+
+builder.Services.AddHttpClient<IAddress, AddressService>(client =>
+{
+    client.BaseAddress = new Uri("https://api.dataforsyningen.dk/");
+});
 
 var app = builder.Build();
 
