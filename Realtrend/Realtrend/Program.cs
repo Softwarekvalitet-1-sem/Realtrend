@@ -16,6 +16,8 @@ builder.Services.AddHttpClient<IAddress, AddressService>(client =>
     client.BaseAddress = new Uri("https://api.dataforsyningen.dk/");
 });
 
+builder.Services.AddScoped<AddressStateService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -2,9 +2,11 @@
 
 @using Realtrend.Interfaces;
 @using Realtrend.Models;
+@using Realtrend.Services;
 
 @inject IAddress AddressService;
 @inject NavigationManager NavigationManager
+@inject AddressStateService AddressState
 
 <PageTitle>Index</PageTitle>
 <div class="d-flex justify-content-center">
@@ -21,7 +23,7 @@
                     <label class="text-black" for="street">Vej og husnummer:</label>
                 </div>
                 <div class="col-md-6">
-                    <input type="text" class="form-control" id="street" @bind="addressForm.Street" />
+                    <input type="text" class="form-control" id="street" @bind="userAddress.StreetAndHouseNumber" />
                 </div>
             </div>
 
@@ -31,7 +33,7 @@
                     <label class="text-black" for="zipCode">Postnummer:</label>
                 </div>
                 <div class="col-md-6 text-md-right">
-                    <input type="text" class="form-control" id="zipCode" @bind="addressForm.ZipCode" />
+                    <input type="text" class="form-control" id="zipCode" @bind="userAddress.ZipCode" />
                 </div>
             </div>
 
@@ -40,7 +42,7 @@
                     <label class="text-black" for="city">By:</label>
                 </div>
                 <div class="col-md-6 text-md-right">
-                    <input type="text" class="form-control" id="city" @bind="addressForm.City" />
+                    <input type="text" class="form-control" id="city" @bind="userAddress.City" />
                 </div>
             </div>
 
@@ -52,13 +54,29 @@
 </div>
 
 @code {
-    private AddressForm addressForm = new AddressForm();
+    private UserAddress userAddress = new UserAddress();
+
 
     private async void OnSubmit()
     {
-        var addresses = await AddressService.GetAddressResponseAsync(addressForm.Street);
+        userAddress = new UserAddress(userAddress.StreetAndHouseNumber, userAddress.ZipCode, userAddress.City);
+
+        var addresses = await AddressService.GetAddressResponseAsync(userAddress.StreetAndHouseNumber);
 
         var addressId = addresses.First().Id;
+
+        userAddress.AddressId = addressId;
+
+        var jordStykke = await AddressService.GetJordstykkeFromAddressId(addressId);
+
+        userAddress.Jordstykke = jordStykke;
+
+        var bfeNumber = await AddressService.GetBfeNumberFromJordStykke(jordStykke);
+
+        userAddress.BfeNumber = bfeNumber;
+
+        AddressState.SetCurrentAddress(userAddress);
+
 
         NavigationManager.NavigateTo("/chartpage");
     }
