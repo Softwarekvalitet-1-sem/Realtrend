@@ -1,4 +1,24 @@
 ﻿@page "/chartpage"
+@using Realtrend.Models;
+@using Realtrend.Services;
+
+@inject AddressStateService AddressState;
+
 <h3>ChartPage</h3>
+<h3>Address Details</h3>
+<p>Street: @currentAddress.StreetAndHouseNumber</p>
+<p>Zip Code: @currentAddress.ZipCode</p>
+<p>City: @currentAddress.City</p>
+<p>Address ID: @currentAddress.AddressId</p>
+<p>Jordstykke: @currentAddress.Jordstykke</p>
+<p>BFE Number: @currentAddress.BfeNumber</p>
 
 
+@code {
+    private UserAddress currentAddress;
+
+    protected override void OnInitialized()
+    {
+        currentAddress = AddressState.GetCurrentAddress();
+    }
+}

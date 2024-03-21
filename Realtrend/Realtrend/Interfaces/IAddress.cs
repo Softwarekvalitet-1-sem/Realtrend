@@ -6,6 +6,8 @@ namespace Realtrend.Interfaces
     {
         Task<string> GetIdFromAddress(string address);
         Task<bool> ValidateAddress(string address);
-
+        Task<IEnumerable<Address>> GetAddressResponseAsync(string address);
+        Task<string> GetJordstykkeFromAddressId(string addressId);
+        Task<string> GetBfeNumberFromJordStykke(string jordStykke);
     }
 }
