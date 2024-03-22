@@ -10,6 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="bunit" Version="1.27.17" />
+    <PackageReference Include="fluentassertions" Version="6.12.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0" />
     <PackageReference Include="Moq" Version="4.20.70" />
     <PackageReference Include="xunit" Version="2.4.2" />
@@ -25,6 +27,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Realtrend\Realtrend.csproj" />
+    <ProjectReference Include="..\Realtrend.Library\Realtrend.Library.csproj" />
   </ItemGroup>
 
 </Project>
