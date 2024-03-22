@@ -1,4 +1,4 @@
-﻿using Realtrend.Models;
+﻿using Realtrend.Library;
 
 namespace Realtrend.Interfaces
 {
