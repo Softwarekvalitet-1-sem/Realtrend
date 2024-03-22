@@ -1,0 +1,80 @@
+@using Realtrend.Interfaces;
+@using Realtrend.Models;
+@using Realtrend.Services;
+
+@inject IAddress AddressService;
+@inject AddressStateService AddressState
+
+<div class="d-flex justify-content-center">
+
+
+  <div class="p-4" style="max-width: 700px; border-radius:30px; background-color: @GlobalColors.CustomBackgroundColor;">
+    <div class="d-flex justify-content-center">
+      <h6 class="text-black">INDTAST DIN ADRESSE</h6>
+    </div>
+
+    <form @onsubmit="OnSubmit">
+      <div class="form-row d-flex justify-content-between mb-3">
+        <div class="col-md-6 text-md-left">
+          <label class="text-black" for="street">Vej og husnummer:</label>
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="street" @bind="userAddress.StreetAndHouseNumber" />
+        </div>
+      </div>
+
+
+      <div class="form-row d-flex justify-content-between mb-3">
+        <div class="col-md-6 text-md-left">
+          <label class="text-black" for="zipCode">Postnummer:</label>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <input type="text" class="form-control" id="zipCode" @bind="userAddress.ZipCode" />
+        </div>
+      </div>
+
+      <div class="form-row d-flex justify-content-between mb-3">
+        <div class="col-md-6 text-md-left">
+          <label class="text-black" for="city">By:</label>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <input type="text" class="form-control" id="city" @bind="userAddress.City" />
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <input type="submit" value="Find boligvurderinger" class="btn btn-primary" style="background-color: @GlobalColors.CustomApplicationColor;" />
+      </div>
+    </form>
+  </div>
+</div>
+
+@code {
+  private UserAddress userAddress = new UserAddress();
+
+  [Parameter]
+  public EventCallback OnSubmitCallback { get; set; }
+
+  private async void OnSubmit()
+  {
+    userAddress = new UserAddress(userAddress.StreetAndHouseNumber, userAddress.ZipCode, userAddress.City);
+
+    var addresses = await AddressService.GetAddressResponseAsync(userAddress.StreetAndHouseNumber);
+
+    var addressId = addresses.First().Id;
+
+    userAddress.AddressId = addressId;
+
+    var jordStykke = await AddressService.GetJordstykkeFromAddressId(addressId);
+
+    userAddress.Jordstykke = jordStykke;
+
+    var bfeNumber = await AddressService.GetBfeNumberFromJordStykke(jordStykke);
+
+    userAddress.BfeNumber = bfeNumber;
+
+    AddressState.SetCurrentAddress(userAddress);
+
+    await OnSubmitCallback.InvokeAsync();
+  }
+}

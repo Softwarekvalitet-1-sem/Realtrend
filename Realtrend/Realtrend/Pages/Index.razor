@@ -1,83 +1,35 @@
 ﻿@page "/"
 
-@using Realtrend.Interfaces;
-@using Realtrend.Models;
-@using Realtrend.Services;
+@using Realtrend.Components
 
-@inject IAddress AddressService;
 @inject NavigationManager NavigationManager
-@inject AddressStateService AddressState
 
 <PageTitle>Index</PageTitle>
-<div class="d-flex justify-content-center">
+<AddressForm OnSubmitCallback="ToggleButtonVisibility"/>
 
-
-    <div class="p-4" style="max-width: 700px; border-radius:30px; background-color: @GlobalColors.CustomBackgroundColor;">
-        <div class="d-flex justify-content-center">
-            <h6 class="text-black">INDTAST DIN ADRESSE</h6>
-        </div>
-
-        <form @onsubmit="OnSubmit">
-            <div class="form-row d-flex justify-content-between mb-3">
-                <div class="col-md-6 text-md-left">
-                    <label class="text-black" for="street">Vej og husnummer:</label>
-                </div>
-                <div class="col-md-6">
-                    <input type="text" class="form-control" id="street" @bind="userAddress.StreetAndHouseNumber" />
-                </div>
-            </div>
-
-
-            <div class="form-row d-flex justify-content-between mb-3">
-                <div class="col-md-6 text-md-left">
-                    <label class="text-black" for="zipCode">Postnummer:</label>
-                </div>
-                <div class="col-md-6 text-md-right">
-                    <input type="text" class="form-control" id="zipCode" @bind="userAddress.ZipCode" />
-                </div>
-            </div>
-
-            <div class="form-row d-flex justify-content-between mb-3">
-                <div class="col-md-6 text-md-left">
-                    <label class="text-black" for="city">By:</label>
-                </div>
-                <div class="col-md-6 text-md-right">
-                    <input type="text" class="form-control" id="city" @bind="userAddress.City" />
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-center">
-                <input type="submit" value="Find boligvurderinger" class="btn btn-primary" style="background-color: @GlobalColors.CustomApplicationColor;" />
-            </div>
-        </form>
+<!-- Render additional button conditionally -->
+@if (showAdditionalButton)
+{
+    <div class="d-flex justify-content-center mt-3">
+        <button class="btn btn-secondary" @onclick="showCharts">Prishistorik</button>
+        <button class="btn btn-secondary mx-3">Ny feature</button>
+        <button class="btn btn-secondary">Ny feature</button>
     </div>
-</div>
+}
 
 @code {
-    private UserAddress userAddress = new UserAddress();
 
+    private bool showAdditionalButton = false;
 
-    private async void OnSubmit()
+    // Callback function to toggle the flag
+    private void ToggleButtonVisibility()
     {
-        userAddress = new UserAddress(userAddress.StreetAndHouseNumber, userAddress.ZipCode, userAddress.City);
+        showAdditionalButton = true;
+    }
 
-        var addresses = await AddressService.GetAddressResponseAsync(userAddress.StreetAndHouseNumber);
-
-        var addressId = addresses.First().Id;
-
-        userAddress.AddressId = addressId;
-
-        var jordStykke = await AddressService.GetJordstykkeFromAddressId(addressId);
-
-        userAddress.Jordstykke = jordStykke;
-
-        var bfeNumber = await AddressService.GetBfeNumberFromJordStykke(jordStykke);
-
-        userAddress.BfeNumber = bfeNumber;
-
-        AddressState.SetCurrentAddress(userAddress);
-
-
+    private void showCharts()
+    {
+        // Navigate to the chart page
         NavigationManager.NavigateTo("/chartpage");
     }
 }
