@@ -1,3 +1,4 @@
+using FluentAssertions;
 using Moq;
 using Moq.Protected;
 using Newtonsoft.Json;
@@ -69,11 +70,19 @@ namespace RealTrend.UnitTests
         //             ItExpr.IsAny<CancellationToken>())
         //         .ReturnsAsync(response);
 
+<<<<<<< HEAD
         //     var httpClient = new HttpClient(mockHttpMessageHandler.Object);
         //     var addressDetailService = new AddressDetailService(httpClient);
 
         //     // Act
         //     var actualAddress = addressDetailService.GetAddressDetail("");
+=======
+            var httpClient = new HttpClient(mockHttpMessageHandler.Object);
+            var addressDetailService = new AddressService(httpClient);
+
+            // Act
+            var actualAddress = addressDetailService.GetAddressResponseAsync("");
+>>>>>>> fd78881 (Models, Mocking & dummy services(Not done))
 
         //     // Assert
         //     Assert.Equal(JsonConvert.SerializeObject(expectedAddress), JsonConvert.SerializeObject(actualAddress));
@@ -118,5 +127,33 @@ namespace RealTrend.UnitTests
             Assert.Equal(expected, result);
         }
 
+        [Theory]
+        [InlineData("12345", 123.45)]
+        public async Task GetAssessment_ValidPropertyId_ReturnsAssessment(string propertyId, double expectedAssessment)
+        {
+            // Arrange
+            var mockHttpMessageHandler = new Mock<HttpMessageHandler>();
+            var response = new HttpResponseMessage
+            {
+                StatusCode = HttpStatusCode.OK,
+                Content = new StringContent(expectedAssessment.ToString())
+            };
+
+            mockHttpMessageHandler.Protected()
+                .Setup<Task<HttpResponseMessage>>(
+                    "SendAsync",
+                    ItExpr.IsAny<HttpRequestMessage>(),
+                    ItExpr.IsAny<CancellationToken>())
+                .ReturnsAsync(response);
+
+            var httpClient = new HttpClient(mockHttpMessageHandler.Object);
+            var basicValueSpecificationService = new BasicValueSpecificationService(httpClient);
+
+            // Act
+            var actualAssessment = await basicValueSpecificationService.GetAssessment(propertyId);
+
+            // Assert
+            actualAssessment.Should().Be(expectedAssessment);
+        }
     }
 }
