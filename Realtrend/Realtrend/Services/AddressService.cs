@@ -1,5 +1,5 @@
 ﻿using Realtrend.Interfaces;
-using Realtrend.Models;
+using Realtrend.Library;
 using System.Net;
 using System.Text.Json;
 using System.Text.RegularExpressions;

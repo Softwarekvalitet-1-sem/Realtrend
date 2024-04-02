@@ -1,4 +1,4 @@
-﻿namespace Realtrend.Models
+﻿namespace Realtrend.Library
 {
     public class Address
     {
@@ -22,6 +22,5 @@
         public double Y { get; set; }
         public string Href { get; set; }
         public string Betegnelse { get; set; }
-
     }
 }
