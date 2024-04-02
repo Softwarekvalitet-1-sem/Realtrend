@@ -18,6 +18,8 @@ builder.Services.AddScoped<AddressStateService>();
 
 var app = builder.Build();
 
+SeedDataToFile.CreateAndSaveMockData();
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

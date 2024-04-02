@@ -13,10 +13,9 @@ namespace Realtrend.Services
         }
 
         // TODO: Implement this method
-        public async Task<double> GetAssessment(string propertyId)
+        public Task<double> GetAssessment(string assessmentProperty)
         {
-            return 0;
-
+            throw new NotImplementedException();
         }
     }
 }
