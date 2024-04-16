@@ -1,541 +1,541 @@
 [
   {
-    "VURejendomsid": 8679.633008069926,
-    "ESRejendomsnummer": 3042.151371653351,
-    "ESRkommunenummer": 697.2602607808132,
-    "VurderingsejendomID": 9444.802838234327,
-    "BFENummber": "BFE4441,509216688897",
+    "VURejendomsid": 3542.3062903776836,
+    "ESRejendomsnummer": 4632.658546250225,
+    "ESRkommunenummer": 2679.7180038687975,
+    "VurderingsejendomID": 2474.934736143637,
+    "BFENummber": "BFE3278,6491252397377",
     "ValueSpecifications": [
       {
-        "Areal": 1212.6909682905462,
-        "Beløb": 193.9984739263001,
-        "EnhedBeløb": 7393.852183457106,
-        "Løbenummer": 6046.8632893288495,
-        "PrisKode": "PK6383,558353893076",
-        "Tekst": "Sample Text 1074,5236340948215",
-        "RequiredVURejendomsid": "BFE9687,470232623826"
+        "Areal": 5803.944860583865,
+        "Beløb": 1950.771846370053,
+        "EnhedBeløb": 9413.658830593968,
+        "Løbenummer": 3120.9901401585494,
+        "PrisKode": "PK4258,591187351626",
+        "Tekst": "Sample Text 4925,779976874623",
+        "RequiredVURejendomsid": "BFE4138,348562566404"
       },
       {
-        "Areal": 4790.017619559624,
-        "Beløb": 7996.424991873653,
-        "EnhedBeløb": 6298.897294226477,
-        "Løbenummer": 9256.081395840705,
-        "PrisKode": "PK5323,924601860006",
-        "Tekst": "Sample Text 1759,8432910493966",
-        "RequiredVURejendomsid": "BFE9687,470232623826"
+        "Areal": 7126.614068441937,
+        "Beløb": 5775.518665703328,
+        "EnhedBeløb": 8702.09318319665,
+        "Løbenummer": 7958.950414148451,
+        "PrisKode": "PK4601,395887243741",
+        "Tekst": "Sample Text 3850,967344589239",
+        "RequiredVURejendomsid": "BFE4138,348562566404"
       },
       {
-        "Areal": 7515.518227218047,
-        "Beløb": 5752.616438828554,
-        "EnhedBeløb": 8609.386887535555,
-        "Løbenummer": 3426.4257237782513,
-        "PrisKode": "PK3082,4056465334147",
-        "Tekst": "Sample Text 2456,2479532204984",
-        "RequiredVURejendomsid": "BFE9687,470232623826"
+        "Areal": 3384.1799520401437,
+        "Beløb": 5922.85371325385,
+        "EnhedBeløb": 4440.275900124499,
+        "Løbenummer": 2138.8111978683523,
+        "PrisKode": "PK6415,495071654162",
+        "Tekst": "Sample Text 1131,9167225313854",
+        "RequiredVURejendomsid": "BFE4138,348562566404"
       },
       {
-        "Areal": 1790.0530532887503,
-        "Beløb": 465.71143505503954,
-        "EnhedBeløb": 8796.7786130931,
-        "Løbenummer": 4645.4715531753345,
-        "PrisKode": "PK9998,623502193164",
-        "Tekst": "Sample Text 4324,947647169085",
-        "RequiredVURejendomsid": "BFE9687,470232623826"
+        "Areal": 4031.7780315123973,
+        "Beløb": 3349.1072427805157,
+        "EnhedBeløb": 212.19917475493455,
+        "Løbenummer": 6778.921423282866,
+        "PrisKode": "PK7392,159457593439",
+        "Tekst": "Sample Text 8476,206274404025",
+        "RequiredVURejendomsid": "BFE4138,348562566404"
       },
       {
-        "Areal": 654.5639043206642,
-        "Beløb": 3074.1144254304877,
-        "EnhedBeløb": 8100.341564965533,
-        "Løbenummer": 6550.971408475954,
-        "PrisKode": "PK7084,204595036179",
-        "Tekst": "Sample Text 2455,635059038704",
-        "RequiredVURejendomsid": "BFE9687,470232623826"
+        "Areal": 2212.8487055354362,
+        "Beløb": 4560.509834100272,
+        "EnhedBeløb": 4956.225681805497,
+        "Løbenummer": 6387.81634229239,
+        "PrisKode": "PK9815,647365917606",
+        "Tekst": "Sample Text 5890,84652355903",
+        "RequiredVURejendomsid": "BFE4138,348562566404"
       }
     ]
   },
   {
-    "VURejendomsid": 2371.225926212073,
-    "ESRejendomsnummer": 9080.523443823871,
-    "ESRkommunenummer": 4631.4547150985845,
-    "VurderingsejendomID": 3393.961930271221,
-    "BFENummber": "BFE2935,365313023557",
+    "VURejendomsid": 8707.213217390317,
+    "ESRejendomsnummer": 9847.187376934786,
+    "ESRkommunenummer": 4199.151172619478,
+    "VurderingsejendomID": 1816.1143474280716,
+    "BFENummber": "BFE3085,9827157585796",
     "ValueSpecifications": [
       {
-        "Areal": 2398.5206984340757,
-        "Beløb": 6317.477618564491,
-        "EnhedBeløb": 6492.960724156714,
-        "Løbenummer": 6735.727510269607,
-        "PrisKode": "PK4073,844889968128",
-        "Tekst": "Sample Text 7058,396175426803",
-        "RequiredVURejendomsid": "BFE2675,2474120904667"
+        "Areal": 2371.401766841804,
+        "Beløb": 2017.8476248755628,
+        "EnhedBeløb": 3024.3661421836864,
+        "Løbenummer": 6793.285087589237,
+        "PrisKode": "PK1386,7581492173385",
+        "Tekst": "Sample Text 3298,2627133416163",
+        "RequiredVURejendomsid": "BFE4692,985977426677"
       },
       {
-        "Areal": 405.3326724761597,
-        "Beløb": 8471.190343494993,
-        "EnhedBeløb": 5851.070353291789,
-        "Løbenummer": 3578.023437467669,
-        "PrisKode": "PK1779,7356872843118",
-        "Tekst": "Sample Text 1243,5710615586038",
-        "RequiredVURejendomsid": "BFE2675,2474120904667"
+        "Areal": 2241.842435770043,
+        "Beløb": 2945.290635469553,
+        "EnhedBeløb": 8549.050779278708,
+        "Løbenummer": 1578.3571930430508,
+        "PrisKode": "PK6827,963307648106",
+        "Tekst": "Sample Text 1944,1834470932074",
+        "RequiredVURejendomsid": "BFE4692,985977426677"
       },
       {
-        "Areal": 3947.4810889611167,
-        "Beløb": 4123.0202534587315,
-        "EnhedBeløb": 8558.9633603302,
-        "Løbenummer": 5391.175686678107,
-        "PrisKode": "PK370,20824124476826",
-        "Tekst": "Sample Text 1269,744592767784",
-        "RequiredVURejendomsid": "BFE2675,2474120904667"
+        "Areal": 9926.448286376735,
+        "Beløb": 7237.22628911281,
+        "EnhedBeløb": 804.9447022403111,
+        "Løbenummer": 5710.509317438242,
+        "PrisKode": "PK8486,396760295918",
+        "Tekst": "Sample Text 6411,858132410491",
+        "RequiredVURejendomsid": "BFE4692,985977426677"
       },
       {
-        "Areal": 9771.664106100263,
-        "Beløb": 3802.1381177149437,
-        "EnhedBeløb": 6782.789366552834,
-        "Løbenummer": 3617.4321246159348,
-        "PrisKode": "PK211,27749249364558",
-        "Tekst": "Sample Text 7346,712793698755",
-        "RequiredVURejendomsid": "BFE2675,2474120904667"
+        "Areal": 1228.8614190270941,
+        "Beløb": 3887.6049381980247,
+        "EnhedBeløb": 8219.379054314679,
+        "Løbenummer": 2483.2095675783116,
+        "PrisKode": "PK1475,5332242096497",
+        "Tekst": "Sample Text 9475,832123485809",
+        "RequiredVURejendomsid": "BFE4692,985977426677"
       },
       {
-        "Areal": 5945.060486834658,
-        "Beløb": 5844.749214049878,
-        "EnhedBeløb": 2338.8975042026973,
-        "Løbenummer": 7061.237187046332,
-        "PrisKode": "PK6467,807769430815",
-        "Tekst": "Sample Text 4736,303444303535",
-        "RequiredVURejendomsid": "BFE2675,2474120904667"
+        "Areal": 8682.746681024802,
+        "Beløb": 7404.605928167981,
+        "EnhedBeløb": 2774.902294309456,
+        "Løbenummer": 3393.281750134394,
+        "PrisKode": "PK7826,396501424936",
+        "Tekst": "Sample Text 6940,144867750977",
+        "RequiredVURejendomsid": "BFE4692,985977426677"
       }
     ]
   },
   {
-    "VURejendomsid": 5977.770550081906,
-    "ESRejendomsnummer": 3921.07110092914,
-    "ESRkommunenummer": 2750.2478436286215,
-    "VurderingsejendomID": 9273.97922974412,
-    "BFENummber": "BFE6313,360180925922",
+    "VURejendomsid": 3043.222682809321,
+    "ESRejendomsnummer": 7013.162233547062,
+    "ESRkommunenummer": 1666.0530818710006,
+    "VurderingsejendomID": 8258.707104618845,
+    "BFENummber": "BFE8812,45563733771",
     "ValueSpecifications": [
       {
-        "Areal": 8208.293944090437,
-        "Beløb": 9582.624604451967,
-        "EnhedBeløb": 3232.5439864033247,
-        "Løbenummer": 3921.86325920872,
-        "PrisKode": "PK9007,403833124361",
-        "Tekst": "Sample Text 5833,341508441074",
-        "RequiredVURejendomsid": "BFE4195,905127837916"
+        "Areal": 1488.3015156019253,
+        "Beløb": 6803.378750767552,
+        "EnhedBeløb": 4797.113804635985,
+        "Løbenummer": 5034.712245741533,
+        "PrisKode": "PK7930,8539255714695",
+        "Tekst": "Sample Text 6447,871862917973",
+        "RequiredVURejendomsid": "BFE6099,617193463497"
       },
       {
-        "Areal": 4661.374442471498,
-        "Beløb": 7078.041686544916,
-        "EnhedBeløb": 8241.016343918454,
-        "Løbenummer": 8963.553504075291,
-        "PrisKode": "PK6162,142375767755",
-        "Tekst": "Sample Text 8449,897647895936",
-        "RequiredVURejendomsid": "BFE4195,905127837916"
+        "Areal": 3528.6501111702382,
+        "Beløb": 642.4404292247765,
+        "EnhedBeløb": 8851.789934329627,
+        "Løbenummer": 7453.8624453061575,
+        "PrisKode": "PK6396,011702758293",
+        "Tekst": "Sample Text 8008,736074173916",
+        "RequiredVURejendomsid": "BFE6099,617193463497"
       },
       {
-        "Areal": 7099.561377403817,
-        "Beløb": 8678.690519572174,
-        "EnhedBeløb": 8840.428629968525,
-        "Løbenummer": 3637.90747801333,
-        "PrisKode": "PK2432,4931071690835",
-        "Tekst": "Sample Text 8595,454545099532",
-        "RequiredVURejendomsid": "BFE4195,905127837916"
+        "Areal": 9499.784952717873,
+        "Beløb": 5992.332822726349,
+        "EnhedBeløb": 7930.906941080105,
+        "Løbenummer": 3276.967693461368,
+        "PrisKode": "PK3411,068888350396",
+        "Tekst": "Sample Text 2687,701832007199",
+        "RequiredVURejendomsid": "BFE6099,617193463497"
       },
       {
-        "Areal": 1966.9576790881827,
-        "Beløb": 2128.2422430862835,
-        "EnhedBeløb": 8147.930063209968,
-        "Løbenummer": 3784.10519123056,
-        "PrisKode": "PK8553,102421115862",
-        "Tekst": "Sample Text 7291,272849313907",
-        "RequiredVURejendomsid": "BFE4195,905127837916"
+        "Areal": 8175.032116990871,
+        "Beløb": 3984.939398628462,
+        "EnhedBeløb": 4413.267121019504,
+        "Løbenummer": 6849.736796433158,
+        "PrisKode": "PK6336,261659134539",
+        "Tekst": "Sample Text 5153,362631008355",
+        "RequiredVURejendomsid": "BFE6099,617193463497"
       },
       {
-        "Areal": 2744.4469052907216,
-        "Beløb": 3376.1605646485427,
-        "EnhedBeløb": 4109.570291004927,
-        "Løbenummer": 7285.730909960163,
-        "PrisKode": "PK8596,171837882304",
-        "Tekst": "Sample Text 7641,182955447333",
-        "RequiredVURejendomsid": "BFE4195,905127837916"
+        "Areal": 9483.33544400056,
+        "Beløb": 8012.125061736897,
+        "EnhedBeløb": 5197.339334810263,
+        "Løbenummer": 7877.408271137193,
+        "PrisKode": "PK868,097964514355",
+        "Tekst": "Sample Text 4806,63400947405",
+        "RequiredVURejendomsid": "BFE6099,617193463497"
       }
     ]
   },
   {
-    "VURejendomsid": 3949.610616946283,
-    "ESRejendomsnummer": 2346.310471759194,
-    "ESRkommunenummer": 9035.85876842663,
-    "VurderingsejendomID": 1897.7761326337893,
-    "BFENummber": "BFE7006,484323767282",
+    "VURejendomsid": 4093.7740217972773,
+    "ESRejendomsnummer": 1233.7187337123312,
+    "ESRkommunenummer": 9614.100269439707,
+    "VurderingsejendomID": 2237.7565443341286,
+    "BFENummber": "BFE9654,485289648184",
     "ValueSpecifications": [
       {
-        "Areal": 4213.230990641936,
-        "Beløb": 6711.653614655476,
-        "EnhedBeløb": 8679.243225769535,
-        "Løbenummer": 7084.404500286092,
-        "PrisKode": "PK8003,53420981279",
-        "Tekst": "Sample Text 2035,2056964979759",
-        "RequiredVURejendomsid": "BFE5283,479859429992"
+        "Areal": 46.84777943754326,
+        "Beløb": 3020.1495699727343,
+        "EnhedBeløb": 5832.583484834112,
+        "Løbenummer": 3557.3200865279496,
+        "PrisKode": "PK4236,207273412714",
+        "Tekst": "Sample Text 687,2027950752469",
+        "RequiredVURejendomsid": "BFE5535,024230542437"
       },
       {
-        "Areal": 6574.15757598405,
-        "Beløb": 8726.79985741372,
-        "EnhedBeløb": 3734.4353359221836,
-        "Løbenummer": 2225.1237457859806,
-        "PrisKode": "PK3807,6429335611238",
-        "Tekst": "Sample Text 8423,662101807626",
-        "RequiredVURejendomsid": "BFE5283,479859429992"
+        "Areal": 942.6171296837794,
+        "Beløb": 1919.1761654366678,
+        "EnhedBeløb": 8162.534108791763,
+        "Løbenummer": 9227.738535575041,
+        "PrisKode": "PK188,10039538843748",
+        "Tekst": "Sample Text 6335,953035979121",
+        "RequiredVURejendomsid": "BFE5535,024230542437"
       },
       {
-        "Areal": 2701.269158790125,
-        "Beløb": 800.9811889219399,
-        "EnhedBeløb": 712.9635850154825,
-        "Løbenummer": 8434.358772643618,
-        "PrisKode": "PK2303,385454738416",
-        "Tekst": "Sample Text 5181,372663887385",
-        "RequiredVURejendomsid": "BFE5283,479859429992"
+        "Areal": 2924.5342619127878,
+        "Beløb": 6628.644819523308,
+        "EnhedBeløb": 3051.964379596518,
+        "Løbenummer": 8437.662226635102,
+        "PrisKode": "PK5658,72432593734",
+        "Tekst": "Sample Text 296,2385216931607",
+        "RequiredVURejendomsid": "BFE5535,024230542437"
       },
       {
-        "Areal": 2064.834272775463,
-        "Beløb": 5210.0861185251815,
-        "EnhedBeløb": 3459.086006790164,
-        "Løbenummer": 6751.101620719642,
-        "PrisKode": "PK1913,3995805432226",
-        "Tekst": "Sample Text 4644,18575725088",
-        "RequiredVURejendomsid": "BFE5283,479859429992"
+        "Areal": 4486.283879459729,
+        "Beløb": 5886.76095826551,
+        "EnhedBeløb": 1516.6201068766838,
+        "Løbenummer": 3923.7174363464633,
+        "PrisKode": "PK9427,867381643373",
+        "Tekst": "Sample Text 5729,735989735637",
+        "RequiredVURejendomsid": "BFE5535,024230542437"
       },
       {
-        "Areal": 7300.554015612018,
-        "Beløb": 8604.145627997994,
-        "EnhedBeløb": 2474.642446637865,
-        "Løbenummer": 4952.817461412461,
-        "PrisKode": "PK68,1369810223964",
-        "Tekst": "Sample Text 5146,732145309393",
-        "RequiredVURejendomsid": "BFE5283,479859429992"
+        "Areal": 718.5315632622758,
+        "Beløb": 2342.896276245999,
+        "EnhedBeløb": 832.6069736542896,
+        "Løbenummer": 3310.9443594292597,
+        "PrisKode": "PK6134,091639898644",
+        "Tekst": "Sample Text 4248,693760692848",
+        "RequiredVURejendomsid": "BFE5535,024230542437"
       }
     ]
   },
   {
-    "VURejendomsid": 4679.755998350362,
-    "ESRejendomsnummer": 4811.253450314425,
-    "ESRkommunenummer": 3508.8522955101575,
-    "VurderingsejendomID": 7290.647803776933,
-    "BFENummber": "BFE8264,153353058999",
+    "VURejendomsid": 8068.761781759515,
+    "ESRejendomsnummer": 2386.105115528897,
+    "ESRkommunenummer": 3095.645204235882,
+    "VurderingsejendomID": 3123.7146513606262,
+    "BFENummber": "BFE1969,851763017174",
     "ValueSpecifications": [
       {
-        "Areal": 7345.383688127295,
-        "Beløb": 8380.051205142056,
-        "EnhedBeløb": 7020.338516679594,
-        "Løbenummer": 2101.663826241593,
-        "PrisKode": "PK5793,735924894473",
-        "Tekst": "Sample Text 7066,677923675905",
-        "RequiredVURejendomsid": "BFE3138,9536175490416"
+        "Areal": 8416.272979797153,
+        "Beløb": 1963.030805817908,
+        "EnhedBeløb": 536.8262856227212,
+        "Løbenummer": 8242.680033022027,
+        "PrisKode": "PK6560,670727301831",
+        "Tekst": "Sample Text 1993,4877724587218",
+        "RequiredVURejendomsid": "BFE8366,066817983354"
       },
       {
-        "Areal": 942.1777112668128,
-        "Beløb": 6940.911884756485,
-        "EnhedBeløb": 5454.59557007243,
-        "Løbenummer": 8764.05678284458,
-        "PrisKode": "PK4117,5631614144395",
-        "Tekst": "Sample Text 3143,272912746289",
-        "RequiredVURejendomsid": "BFE3138,9536175490416"
+        "Areal": 9328.344718201477,
+        "Beløb": 6221.370152520351,
+        "EnhedBeløb": 5760.958410930751,
+        "Løbenummer": 9285.051847108747,
+        "PrisKode": "PK5165,700738081637",
+        "Tekst": "Sample Text 3114,653367068356",
+        "RequiredVURejendomsid": "BFE8366,066817983354"
       },
       {
-        "Areal": 5805.4596647661265,
-        "Beløb": 6091.61449011618,
-        "EnhedBeløb": 7737.903369691003,
-        "Løbenummer": 4983.810034290228,
-        "PrisKode": "PK9187,988108377975",
-        "Tekst": "Sample Text 2121,0046348838364",
-        "RequiredVURejendomsid": "BFE3138,9536175490416"
+        "Areal": 4971.659168701236,
+        "Beløb": 9806.06429348309,
+        "EnhedBeløb": 4315.345141599324,
+        "Løbenummer": 3722.645118316523,
+        "PrisKode": "PK8422,297943994565",
+        "Tekst": "Sample Text 6665,367646054423",
+        "RequiredVURejendomsid": "BFE8366,066817983354"
       },
       {
-        "Areal": 5654.009786491966,
-        "Beløb": 7280.634975784914,
-        "EnhedBeløb": 1774.0946794492363,
-        "Løbenummer": 1317.230467894962,
-        "PrisKode": "PK7428,920970975266",
-        "Tekst": "Sample Text 6299,886745909907",
-        "RequiredVURejendomsid": "BFE3138,9536175490416"
+        "Areal": 3655.745690780454,
+        "Beløb": 4581.619941600395,
+        "EnhedBeløb": 8967.379414890436,
+        "Løbenummer": 3569.744533912247,
+        "PrisKode": "PK7352,179930834307",
+        "Tekst": "Sample Text 339,73331068865906",
+        "RequiredVURejendomsid": "BFE8366,066817983354"
       },
       {
-        "Areal": 4375.526675566691,
-        "Beløb": 7478.090853205672,
-        "EnhedBeløb": 88.19552638041684,
-        "Løbenummer": 8097.69437603757,
-        "PrisKode": "PK7728,435847684039",
-        "Tekst": "Sample Text 9936,389245165574",
-        "RequiredVURejendomsid": "BFE3138,9536175490416"
+        "Areal": 7607.026854012922,
+        "Beløb": 2810.082911118177,
+        "EnhedBeløb": 6654.839569776385,
+        "Løbenummer": 5166.847609301513,
+        "PrisKode": "PK9343,54839832567",
+        "Tekst": "Sample Text 8279,482632343113",
+        "RequiredVURejendomsid": "BFE8366,066817983354"
       }
     ]
   },
   {
-    "VURejendomsid": 4701.4750196864,
-    "ESRejendomsnummer": 7279.398336325366,
-    "ESRkommunenummer": 9625.980226036769,
-    "VurderingsejendomID": 1132.7577478760875,
-    "BFENummber": "BFE7605,253382669554",
+    "VURejendomsid": 438.25092430906375,
+    "ESRejendomsnummer": 324.3914219019173,
+    "ESRkommunenummer": 1714.1528537666406,
+    "VurderingsejendomID": 8204.88189542054,
+    "BFENummber": "BFE7467,090860816388",
     "ValueSpecifications": [
       {
-        "Areal": 9667.440088449239,
-        "Beløb": 7435.447146069064,
-        "EnhedBeløb": 8409.117634172948,
-        "Løbenummer": 7407.047269080474,
-        "PrisKode": "PK4165,850425131428",
-        "Tekst": "Sample Text 684,8020087864892",
-        "RequiredVURejendomsid": "BFE6901,136779698362"
+        "Areal": 795.3167531878757,
+        "Beløb": 4681.122529551075,
+        "EnhedBeløb": 4726.0677940337155,
+        "Løbenummer": 5242.261507058393,
+        "PrisKode": "PK3362,287993059846",
+        "Tekst": "Sample Text 3873,3191351227892",
+        "RequiredVURejendomsid": "BFE7357,999253087049"
       },
       {
-        "Areal": 5171.3729757658175,
-        "Beløb": 6962.483461134246,
-        "EnhedBeløb": 3797.572568459702,
-        "Løbenummer": 9703.673402735778,
-        "PrisKode": "PK4750,547462438952",
-        "Tekst": "Sample Text 296,3124777201631",
-        "RequiredVURejendomsid": "BFE6901,136779698362"
+        "Areal": 1281.464177253383,
+        "Beløb": 4966.243860118337,
+        "EnhedBeløb": 9660.520562617552,
+        "Løbenummer": 4453.467475438067,
+        "PrisKode": "PK5919,5719258535655",
+        "Tekst": "Sample Text 2366,8381110133264",
+        "RequiredVURejendomsid": "BFE7357,999253087049"
       },
       {
-        "Areal": 5848.091314123617,
-        "Beløb": 4010.6282737139863,
-        "EnhedBeløb": 3933.791361311083,
-        "Løbenummer": 9932.993119374232,
-        "PrisKode": "PK1847,541909572924",
-        "Tekst": "Sample Text 1762,4158523577648",
-        "RequiredVURejendomsid": "BFE6901,136779698362"
+        "Areal": 2963.948682481341,
+        "Beløb": 3305.250809445498,
+        "EnhedBeløb": 5049.510514161586,
+        "Løbenummer": 5990.9458045856545,
+        "PrisKode": "PK4986,272168499135",
+        "Tekst": "Sample Text 8000,84014647139",
+        "RequiredVURejendomsid": "BFE7357,999253087049"
       },
       {
-        "Areal": 2801.1228922372134,
-        "Beløb": 4244.486697068275,
-        "EnhedBeløb": 5285.696677208631,
-        "Løbenummer": 331.7557514709224,
-        "PrisKode": "PK8910,244003024314",
-        "Tekst": "Sample Text 5388,039273401648",
-        "RequiredVURejendomsid": "BFE6901,136779698362"
+        "Areal": 1315.8323972203855,
+        "Beløb": 6272.38079138879,
+        "EnhedBeløb": 6129.03463140663,
+        "Løbenummer": 6755.978866192701,
+        "PrisKode": "PK7196,023834576269",
+        "Tekst": "Sample Text 4925,175863796187",
+        "RequiredVURejendomsid": "BFE7357,999253087049"
       },
       {
-        "Areal": 6503.910858962325,
-        "Beløb": 5506.020981469556,
-        "EnhedBeløb": 3211.036816689734,
-        "Løbenummer": 2629.2727524435045,
-        "PrisKode": "PK7859,066401915208",
-        "Tekst": "Sample Text 8860,269171965549",
-        "RequiredVURejendomsid": "BFE6901,136779698362"
+        "Areal": 9932.445528554144,
+        "Beløb": 5261.139898513615,
+        "EnhedBeløb": 9454.851168332838,
+        "Løbenummer": 3195.730328600147,
+        "PrisKode": "PK6079,899970624748",
+        "Tekst": "Sample Text 7855,398469861082",
+        "RequiredVURejendomsid": "BFE7357,999253087049"
       }
     ]
   },
   {
-    "VURejendomsid": 6069.560633292218,
-    "ESRejendomsnummer": 608.4602963305919,
-    "ESRkommunenummer": 6568.242666952065,
-    "VurderingsejendomID": 7302.909357928675,
-    "BFENummber": "BFE4146,3259303985915",
+    "VURejendomsid": 9458.843056087177,
+    "ESRejendomsnummer": 7794.231421552517,
+    "ESRkommunenummer": 9811.969223955744,
+    "VurderingsejendomID": 3292.9455223433456,
+    "BFENummber": "BFE881,9360132464849",
     "ValueSpecifications": [
       {
-        "Areal": 9098.083023016721,
-        "Beløb": 923.5298171362194,
-        "EnhedBeløb": 975.74151164735,
-        "Løbenummer": 3562.654394458337,
-        "PrisKode": "PK2542,525311952255",
-        "Tekst": "Sample Text 9399,568268962103",
-        "RequiredVURejendomsid": "BFE1620,8763512186185"
+        "Areal": 5893.896232948651,
+        "Beløb": 8342.28158686588,
+        "EnhedBeløb": 303.93770219379167,
+        "Løbenummer": 448.08831631142465,
+        "PrisKode": "PK4627,2922942085",
+        "Tekst": "Sample Text 9326,811283583587",
+        "RequiredVURejendomsid": "BFE303,60508829119004"
       },
       {
-        "Areal": 9192.973735882488,
-        "Beløb": 4355.986412684127,
-        "EnhedBeløb": 3464.4135739610924,
-        "Løbenummer": 2410.3346595840094,
-        "PrisKode": "PK8796,927185056065",
-        "Tekst": "Sample Text 3482,9594264571197",
-        "RequiredVURejendomsid": "BFE1620,8763512186185"
+        "Areal": 4834.401722202888,
+        "Beløb": 8535.43652947316,
+        "EnhedBeløb": 6292.581029454195,
+        "Løbenummer": 806.9871005450824,
+        "PrisKode": "PK2261,275369552971",
+        "Tekst": "Sample Text 1778,0586305468337",
+        "RequiredVURejendomsid": "BFE303,60508829119004"
       },
       {
-        "Areal": 2003.3759434788312,
-        "Beløb": 8352.090515806287,
-        "EnhedBeløb": 3667.751781056212,
-        "Løbenummer": 8104.355570210947,
-        "PrisKode": "PK874,9856116738841",
-        "Tekst": "Sample Text 2378,7164339698897",
-        "RequiredVURejendomsid": "BFE1620,8763512186185"
+        "Areal": 2289.6502612860027,
+        "Beløb": 518.4888526032494,
+        "EnhedBeløb": 6510.169840260035,
+        "Løbenummer": 8828.803408293863,
+        "PrisKode": "PK1877,1887818282319",
+        "Tekst": "Sample Text 2956,535237172201",
+        "RequiredVURejendomsid": "BFE303,60508829119004"
       },
       {
-        "Areal": 4090.796709639739,
-        "Beløb": 3855.4794953254614,
-        "EnhedBeløb": 7109.224926740743,
-        "Løbenummer": 4653.361322617051,
-        "PrisKode": "PK2951,4790630539787",
-        "Tekst": "Sample Text 9453,012106581751",
-        "RequiredVURejendomsid": "BFE1620,8763512186185"
+        "Areal": 1509.7943767939014,
+        "Beløb": 5920.340913185723,
+        "EnhedBeløb": 3041.5021624243964,
+        "Løbenummer": 6615.268930405396,
+        "PrisKode": "PK384,3450344398891",
+        "Tekst": "Sample Text 3149,9026362367",
+        "RequiredVURejendomsid": "BFE303,60508829119004"
       },
       {
-        "Areal": 2175.6289021987973,
-        "Beløb": 7903.427738404957,
-        "EnhedBeløb": 9190.055988117434,
-        "Løbenummer": 8761.14185217924,
-        "PrisKode": "PK9229,713808175307",
-        "Tekst": "Sample Text 7673,912182636632",
-        "RequiredVURejendomsid": "BFE1620,8763512186185"
+        "Areal": 985.7602857814096,
+        "Beløb": 2262.2921329979163,
+        "EnhedBeløb": 614.8657285779491,
+        "Løbenummer": 3732.852167825197,
+        "PrisKode": "PK4563,245154031511",
+        "Tekst": "Sample Text 3163,276597761038",
+        "RequiredVURejendomsid": "BFE303,60508829119004"
       }
     ]
   },
   {
-    "VURejendomsid": 2981.753068713019,
-    "ESRejendomsnummer": 3816.8140419907904,
-    "ESRkommunenummer": 2605.28173276634,
-    "VurderingsejendomID": 8458.638785478506,
-    "BFENummber": "BFE1488,7253477886043",
+    "VURejendomsid": 2043.5823431587007,
+    "ESRejendomsnummer": 739.31293615216,
+    "ESRkommunenummer": 316.3394901820438,
+    "VurderingsejendomID": 8827.758950645743,
+    "BFENummber": "BFE3747,8812196413146",
     "ValueSpecifications": [
       {
-        "Areal": 9671.905322021834,
-        "Beløb": 8163.579143217492,
-        "EnhedBeløb": 8754.391646365877,
-        "Løbenummer": 1851.5419640723273,
-        "PrisKode": "PK512,2028640574583",
-        "Tekst": "Sample Text 8823,67135625753",
-        "RequiredVURejendomsid": "BFE5824,9747543260555"
+        "Areal": 8702.890556627892,
+        "Beløb": 3550.9700558951317,
+        "EnhedBeløb": 1699.2606972730218,
+        "Løbenummer": 2573.613298525985,
+        "PrisKode": "PK4418,430430370467",
+        "Tekst": "Sample Text 3239,3611014189837",
+        "RequiredVURejendomsid": "BFE9487,413729801829"
       },
       {
-        "Areal": 2706.903550936954,
-        "Beløb": 1483.046107243332,
-        "EnhedBeløb": 575.8243800694729,
-        "Løbenummer": 2049.5892783167124,
-        "PrisKode": "PK7970,71155305685",
-        "Tekst": "Sample Text 9894,899302752694",
-        "RequiredVURejendomsid": "BFE5824,9747543260555"
+        "Areal": 3342.6542368188516,
+        "Beløb": 4690.693212380152,
+        "EnhedBeløb": 9438.927128866553,
+        "Løbenummer": 3182.650931222265,
+        "PrisKode": "PK7023,7401325464225",
+        "Tekst": "Sample Text 4089,2943889247645",
+        "RequiredVURejendomsid": "BFE9487,413729801829"
       },
       {
-        "Areal": 8140.935173122772,
-        "Beløb": 387.78334223088183,
-        "EnhedBeløb": 2724.734674881526,
-        "Løbenummer": 4980.25718375678,
-        "PrisKode": "PK5034,870781097486",
-        "Tekst": "Sample Text 4874,427654970914",
-        "RequiredVURejendomsid": "BFE5824,9747543260555"
+        "Areal": 716.4734781121806,
+        "Beløb": 8936.713840799905,
+        "EnhedBeløb": 7730.6374318394455,
+        "Løbenummer": 2272.5824500490553,
+        "PrisKode": "PK9955,424516630383",
+        "Tekst": "Sample Text 5220,1414439780865",
+        "RequiredVURejendomsid": "BFE9487,413729801829"
       },
       {
-        "Areal": 9447.100219833004,
-        "Beløb": 9722.964415864857,
-        "EnhedBeløb": 3751.5465445213226,
-        "Løbenummer": 7988.15322505882,
-        "PrisKode": "PK8797,20099791129",
-        "Tekst": "Sample Text 4246,831584182588",
-        "RequiredVURejendomsid": "BFE5824,9747543260555"
+        "Areal": 7991.627389811158,
+        "Beløb": 4658.380528352463,
+        "EnhedBeløb": 9623.353608309913,
+        "Løbenummer": 8354.32032608391,
+        "PrisKode": "PK606,4722140428391",
+        "Tekst": "Sample Text 1661,685950165279",
+        "RequiredVURejendomsid": "BFE9487,413729801829"
       },
       {
-        "Areal": 5136.701280199014,
-        "Beløb": 2769.336005353098,
-        "EnhedBeløb": 5959.806433273853,
-        "Løbenummer": 1713.5407437590954,
-        "PrisKode": "PK1283,2781306522022",
-        "Tekst": "Sample Text 6998,145443694735",
-        "RequiredVURejendomsid": "BFE5824,9747543260555"
+        "Areal": 4630.632581344483,
+        "Beløb": 7785.976802229099,
+        "EnhedBeløb": 9149.390366968004,
+        "Løbenummer": 2415.2780060506207,
+        "PrisKode": "PK6063,6187278279385",
+        "Tekst": "Sample Text 6309,3087086610785",
+        "RequiredVURejendomsid": "BFE9487,413729801829"
       }
     ]
   },
   {
-    "VURejendomsid": 4555.507609900402,
-    "ESRejendomsnummer": 3888.7964670156116,
-    "ESRkommunenummer": 6005.250089865728,
-    "VurderingsejendomID": 7878.470646955634,
-    "BFENummber": "BFE6020,5868798765505",
+    "VURejendomsid": 5682.047913021335,
+    "ESRejendomsnummer": 5704.158756032602,
+    "ESRkommunenummer": 5776.434105166991,
+    "VurderingsejendomID": 3.7744042158427416,
+    "BFENummber": "BFE6545,668495445322",
     "ValueSpecifications": [
       {
-        "Areal": 5090.793243375356,
-        "Beløb": 8593.038858512185,
-        "EnhedBeløb": 9631.97585786421,
-        "Løbenummer": 3765.049403245373,
-        "PrisKode": "PK6137,2915807188965",
-        "Tekst": "Sample Text 6052,552175481389",
-        "RequiredVURejendomsid": "BFE3320,853868028535"
+        "Areal": 5841.702108663384,
+        "Beløb": 8354.841290159133,
+        "EnhedBeløb": 9233.899049477835,
+        "Løbenummer": 9301.938181226284,
+        "PrisKode": "PK4518,022150176826",
+        "Tekst": "Sample Text 3053,2392530221573",
+        "RequiredVURejendomsid": "BFE1326,8760531051194"
       },
       {
-        "Areal": 6133.4698270455,
-        "Beløb": 9769.592133392716,
-        "EnhedBeløb": 841.0374027331425,
-        "Løbenummer": 4127.689715278414,
-        "PrisKode": "PK2551,222861948462",
-        "Tekst": "Sample Text 1779,4917997931514",
-        "RequiredVURejendomsid": "BFE3320,853868028535"
+        "Areal": 1403.7048666262142,
+        "Beløb": 4197.298782296573,
+        "EnhedBeløb": 4222.322248740683,
+        "Løbenummer": 4028.091241308791,
+        "PrisKode": "PK6836,758202261955",
+        "Tekst": "Sample Text 1239,2768163283995",
+        "RequiredVURejendomsid": "BFE1326,8760531051194"
       },
       {
-        "Areal": 5899.818717093155,
-        "Beløb": 2770.0057059202145,
-        "EnhedBeløb": 2504.1446142961377,
-        "Løbenummer": 5815.639169205243,
-        "PrisKode": "PK6096,1789193252735",
-        "Tekst": "Sample Text 1177,1116499527823",
-        "RequiredVURejendomsid": "BFE3320,853868028535"
+        "Areal": 5135.016340190731,
+        "Beløb": 492.3663077820839,
+        "EnhedBeløb": 7252.718636566403,
+        "Løbenummer": 6396.345136582766,
+        "PrisKode": "PK9706,29498729331",
+        "Tekst": "Sample Text 1898,732970772067",
+        "RequiredVURejendomsid": "BFE1326,8760531051194"
       },
       {
-        "Areal": 7405.30941042035,
-        "Beløb": 638.8964119660334,
-        "EnhedBeløb": 5562.7755872049265,
-        "Løbenummer": 8878.158427133138,
-        "PrisKode": "PK9855,646786179435",
-        "Tekst": "Sample Text 2345,59480043403",
-        "RequiredVURejendomsid": "BFE3320,853868028535"
+        "Areal": 3563.096363587698,
+        "Beløb": 4512.575355659028,
+        "EnhedBeløb": 2867.635384268168,
+        "Løbenummer": 3026.9484079943486,
+        "PrisKode": "PK5330,654771451897",
+        "Tekst": "Sample Text 9293,993116608017",
+        "RequiredVURejendomsid": "BFE1326,8760531051194"
       },
       {
-        "Areal": 4331.255738666901,
-        "Beløb": 1590.3419683210395,
-        "EnhedBeløb": 4579.236942168705,
-        "Løbenummer": 4543.0360951637085,
-        "PrisKode": "PK8651,31341640799",
-        "Tekst": "Sample Text 5315,556621167882",
-        "RequiredVURejendomsid": "BFE3320,853868028535"
+        "Areal": 2798.9609532286418,
+        "Beløb": 9010.893966518908,
+        "EnhedBeløb": 6848.622047408218,
+        "Løbenummer": 7560.883481616237,
+        "PrisKode": "PK4340,714213272306",
+        "Tekst": "Sample Text 4424,168448166407",
+        "RequiredVURejendomsid": "BFE1326,8760531051194"
       }
     ]
   },
   {
-    "VURejendomsid": 435.39963841824124,
-    "ESRejendomsnummer": 9683.329316775991,
-    "ESRkommunenummer": 9985.831114266808,
-    "VurderingsejendomID": 5537.155942223967,
-    "BFENummber": "BFE3693,2333503816762",
+    "VURejendomsid": 8428.27187803143,
+    "ESRejendomsnummer": 3619.104804065364,
+    "ESRkommunenummer": 1787.5751786619621,
+    "VurderingsejendomID": 4629.862506821215,
+    "BFENummber": "BFE2487,8884960846294",
     "ValueSpecifications": [
       {
-        "Areal": 2821.7720859199803,
-        "Beløb": 4042.9694387742334,
-        "EnhedBeløb": 1707.6944104480895,
-        "Løbenummer": 5351.850763383367,
-        "PrisKode": "PK4555,5104734149045",
-        "Tekst": "Sample Text 5548,298026909984",
-        "RequiredVURejendomsid": "BFE655,8497622973148"
+        "Areal": 8045.16732920461,
+        "Beløb": 434.52893381875526,
+        "EnhedBeløb": 3768.8575960374737,
+        "Løbenummer": 6042.307907261852,
+        "PrisKode": "PK1485,9085645334214",
+        "Tekst": "Sample Text 5964,411762465329",
+        "RequiredVURejendomsid": "BFE770,2394824556036"
       },
       {
-        "Areal": 7517.110109454746,
-        "Beløb": 4802.700374284264,
-        "EnhedBeløb": 7289.715591235519,
-        "Løbenummer": 5578.913970868071,
-        "PrisKode": "PK5033,86376001348",
-        "Tekst": "Sample Text 5940,503193879605",
-        "RequiredVURejendomsid": "BFE655,8497622973148"
+        "Areal": 6763.885303875968,
+        "Beløb": 1693.4486762668687,
+        "EnhedBeløb": 7422.717700056594,
+        "Løbenummer": 4400.207805521137,
+        "PrisKode": "PK9359,736351268195",
+        "Tekst": "Sample Text 1225,5637746458403",
+        "RequiredVURejendomsid": "BFE770,2394824556036"
       },
       {
-        "Areal": 5277.57112612602,
-        "Beløb": 4955.688892894803,
-        "EnhedBeløb": 1544.2847566837836,
-        "Løbenummer": 528.4167083417613,
-        "PrisKode": "PK1544,4406672833234",
-        "Tekst": "Sample Text 690,8718182128437",
-        "RequiredVURejendomsid": "BFE655,8497622973148"
+        "Areal": 6381.912281044469,
+        "Beløb": 5115.698183406083,
+        "EnhedBeløb": 8884.28247079152,
+        "Løbenummer": 4056.6418486254083,
+        "PrisKode": "PK3226,7389954730484",
+        "Tekst": "Sample Text 6006,353013218975",
+        "RequiredVURejendomsid": "BFE770,2394824556036"
       },
       {
-        "Areal": 5249.587625053376,
-        "Beløb": 7840.039216596093,
-        "EnhedBeløb": 9876.76374365453,
-        "Løbenummer": 4142.921474327319,
-        "PrisKode": "PK8490,545025104717",
-        "Tekst": "Sample Text 1119,5914804101926",
-        "RequiredVURejendomsid": "BFE655,8497622973148"
+        "Areal": 5898.315770845863,
+        "Beløb": 7986.132161745985,
+        "EnhedBeløb": 3004.6038237644766,
+        "Løbenummer": 5059.419474435259,
+        "PrisKode": "PK3995,0905515123823",
+        "Tekst": "Sample Text 1780,7339488057771",
+        "RequiredVURejendomsid": "BFE770,2394824556036"
       },
       {
-        "Areal": 1173.9280333761803,
-        "Beløb": 8169.7541177959565,
-        "EnhedBeløb": 8877.846714686397,
-        "Løbenummer": 7456.557620523875,
-        "PrisKode": "PK6366,609980372442",
-        "Tekst": "Sample Text 5879,705425303062",
-        "RequiredVURejendomsid": "BFE655,8497622973148"
+        "Areal": 3965.683379916769,
+        "Beløb": 7108.2721468989475,
+        "EnhedBeløb": 4298.067942831728,
+        "Løbenummer": 6493.0207424833,
+        "PrisKode": "PK3296,1943869609077",
+        "Tekst": "Sample Text 2768,54016371047",
+        "RequiredVURejendomsid": "BFE770,2394824556036"
       }
     ]
   }
