@@ -1,3 +1,4 @@
+using FluentAssertions.Common;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Realtrend.Interfaces;
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddBlazorBootstrap();
 
 builder.Services.AddHttpClient<IAddress, AddressService>(client =>
 {
@@ -15,6 +17,7 @@ builder.Services.AddHttpClient<IAddress, AddressService>(client =>
 });
 
 builder.Services.AddScoped<AddressStateService>();
+builder.Services.AddScoped<PropertyDataService>();
 
 var app = builder.Build();
 

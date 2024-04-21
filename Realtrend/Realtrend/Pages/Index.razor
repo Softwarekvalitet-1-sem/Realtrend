@@ -15,7 +15,7 @@
     </div>
     <div class="d-flex justify-content-center mt-3">
         <button class="btn btn-secondary" @onclick="showCharts">Prishistorik</button>
-        <button class="btn btn-secondary mx-3" @onclick="showCharts">Boligsammenligning</button>
+        <button class="btn btn-secondary mx-3" @onclick="showComparisons">Boligsammenligning</button>
         <button class="btn btn-secondary">Ny feature</button>
     </div>
 }
@@ -38,6 +38,6 @@
 
     private void showComparisons()
     {
-        NavigationManager.NavigateTo("comparison");
+        NavigationManager.NavigateTo("/comparison");
     }
 }

@@ -1,0 +1,125 @@
+﻿@page "/comparison"
+@using Realtrend.Library
+@using BlazorBootstrap
+@using Realtrend.Models
+@using Realtrend.Services
+@inject AddressStateService AddressState
+@inject PropertyDataService PropertyDataService
+@inject NavigationManager NavigationManager
+
+
+<h3>Property Comparison</h3>
+
+<select @onchange="OnBfeNumberSelected">
+    <option value="">Select A propertys BFE Number to compare historical prices.</option>
+    @foreach (var property in properties)
+    {
+        <option value="@property.BFENumber">@property.BFENumber</option>
+    }
+</select>
+
+<LineChart @ref="lineChart" Width="1400" Class="mb-4" />
+
+@code {
+    private LineChart lineChart = default!;
+    private LineChartOptions lineChartOptions = default!;
+    private ChartData chartData = default!;
+    private List<PairedItem> priceData1 = new List<PairedItem>();
+    private List<AssessmentProperty> properties = new List<AssessmentProperty>();
+
+    public class PairedItem
+    {
+        public double Beløb { get; set; }
+        public DateTime Dato { get; set; }
+    }
+
+    private async Task<List<PairedItem>> GetValues(int bfeNumber)
+    {
+        var property = await PropertyDataService.GetPropertyByBfeNumberAsync(bfeNumber);
+
+        var valueSpecifications = property.ValueSpecifications;
+
+        var pairedItems = new List<PairedItem>();
+
+        foreach (var item in valueSpecifications)
+        {
+            // Create a new PairedItem object for each Dato and Beløb pair
+            var pairedItem = new PairedItem
+                {
+                    Dato = item.Dato, // Assuming Dato is already a DateTime
+                    Beløb = item.Beløb // Assuming Beløb is already a double
+                };
+
+            pairedItems.Add(pairedItem); // Add the PairedItem to the list
+        }
+
+        return pairedItems;
+    }
+
+    private async Task OnBfeNumberSelected(ChangeEventArgs e)
+    {
+        var selectedBfe = int.Parse(e.Value?.ToString() ?? "0");
+        if (selectedBfe != 0)
+        {
+            var values = await GetValues(selectedBfe);
+        }
+    }
+
+
+    protected override async void OnInitialized()
+    {
+        var selectedBfe = AddressState.GetCurrentAddress().BfeNumber;
+
+        var values = await GetValues(int.Parse(selectedBfe));
+        var colors = ColorBuilder.CategoricalTwelveColors;
+
+        var labels = values.Select(item => item.Dato.ToString("yyyy")).ToList();
+        var datasets = new List<IChartDataset>();
+
+        var beløbData = values.Select(item => item.Beløb).ToList();
+
+        var dataset1 = new LineChartDataset()
+            {
+                Label = $"Bfe: {selectedBfe}",
+                Data = beløbData,
+                BackgroundColor = new List<string> { colors[0] },
+                BorderColor = new List<string> { colors[0] },
+                BorderWidth = new List<double> { 2 },
+                HoverBorderWidth = new List<double> { 4 },
+                PointBackgroundColor = new List<string> { colors[0] },
+                PointRadius = new List<int> { 0 }, // hide points
+                PointHoverRadius = new List<int> { 4 },
+            };
+        datasets.Add(dataset1);
+
+        chartData = new ChartData
+            {
+                Labels = labels,
+                Datasets = datasets
+            };
+
+        lineChartOptions = new();
+        lineChartOptions.Responsive = true;
+        lineChartOptions.Interaction = new Interaction { Mode = InteractionMode.Index };
+
+
+        lineChartOptions.Scales.X.Title.Text = "Dato";
+        lineChartOptions.Scales.X.Title.Display = true;
+
+        lineChartOptions.Scales.Y.Title.Text = "Boligværdi";
+        lineChartOptions.Scales.Y.Title.Display = true;
+
+        lineChartOptions.Plugins.Title.Text = "Boligpris sammenligning";
+        lineChartOptions.Plugins.Title.Display = true;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await lineChart.InitializeAsync(chartData, lineChartOptions);
+        }
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
+}

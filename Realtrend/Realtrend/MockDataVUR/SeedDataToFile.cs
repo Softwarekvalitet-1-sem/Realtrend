@@ -20,8 +20,7 @@ public static class SeedDataToFile
 
         for (int i = 0; i < 10; i++)
         {
-
-            var bfeNumber = GenerateRandomBfeNumber();
+            var bfeNumber = GenerateRandomBfeNumber(i);
 
             var property = new AssessmentProperty
             {
@@ -80,13 +79,20 @@ public static class SeedDataToFile
         return random.Next();
     }
 
-    private static int GenerateRandomBfeNumber()
+    private static int GenerateRandomBfeNumber(int index)
     {
-        Random random = new Random();
+        if (index == 0)
+        {
+            return 5475678;
+        }
+        else
+        {
+            Random random = new Random();
 
-        int randomBfe = random.Next(1000000, 9999999);
+            int randomBfe = random.Next(1000000, 9999999);
 
-        return randomBfe;
+            return randomBfe;
+        }
     }
 
     private static int GenerateRandomArea()
