@@ -20,14 +20,17 @@ public static class SeedDataToFile
 
         for (int i = 0; i < 10; i++)
         {
+
+            var bfeNumber = GenerateRandomBfeNumber();
+
             var property = new AssessmentProperty
             {
                 VURejendomsid = RandomNumber(),
                 ESRejendomsnummer = RandomNumber(),
-                ESRkommunenummer = RandomNumber(),
+                ESRkommunenummer = GenerateRandomMunicipalityNumber(),
                 VurderingsejendomID = RandomNumber(),
-                BFENummber = "BFE" + RandomNumber().ToString(),
-                ValueSpecifications = CreateBasicValueSpecifications("BFE" + RandomNumber().ToString())
+                BFENummber = bfeNumber,
+                ValueSpecifications = CreateBasicValueSpecifications(RandomNumber().ToString(), bfeNumber)
             };
 
             properties.Add(property);
@@ -36,7 +39,7 @@ public static class SeedDataToFile
         return properties;
     }
 
-    private static List<BasicValueSpecification> CreateBasicValueSpecifications(string propertyId)
+    private static List<BasicValueSpecification> CreateBasicValueSpecifications(string propertyId, int bfeNumber)
     {
         List<BasicValueSpecification> specs = new List<BasicValueSpecification>();
 
@@ -44,12 +47,12 @@ public static class SeedDataToFile
         {
             var spec = new BasicValueSpecification(propertyId)
             {
-                Areal = RandomNumber(),
-                Beløb = RandomNumber(),
-                EnhedBeløb = RandomNumber(),
+                Areal = GenerateRandomArea(),
+                Beløb = GenerateRandomPrice(),
+                EnhedBeløb = GenerateRandomPrice(),
                 Løbenummer = RandomNumber(),
                 PrisKode = "PK" + RandomNumber().ToString(),
-                Tekst = "Sample Text " + RandomNumber().ToString()
+                Tekst = "Beskrivelse for BFE: " + bfeNumber
             };
 
             specs.Add(spec);
@@ -61,7 +64,57 @@ public static class SeedDataToFile
     private static double RandomNumber()
     {
         Random random = new Random();
-        return random.NextDouble() * 10000; // Adjust the range as per your requirement
+        return Math.Round(random.NextDouble() * 10000, 0);
+    }
+
+    private static int GenerateRandomBfeNumber()
+    {
+        Random random = new Random();
+
+        int randomBfe = random.Next(1000000, 9999999);
+
+        return randomBfe;
+    }
+
+    private static double GenerateRandomArea()
+    {
+        Random random = new Random();
+
+        int randomArea = random.Next(0, 1000);
+
+        double randomDecimal = random.NextDouble() * 0.99;
+
+        return Math.Round(randomArea + randomDecimal, 2);
+    }
+
+    private static double GenerateRandomPrice()
+    {
+        Random random = new Random();
+
+        int randomPrice = random.Next(1000000, 10000000);
+
+        double randomDecimal = random.NextDouble() * 0.99;
+
+        return Math.Round(randomPrice + randomDecimal, 2);
+    }
+
+    private static int GenerateRandomMunicipalityNumber()
+    {
+        var municipalityNumbers = new int[]
+        {
+            101, // København
+            165, // Albertslund
+            151, // Ballerup
+            461, //Odense
+            751, //Aarhus
+
+        };
+
+        Random random = new Random();
+
+        var randomlySelectedMunicipalityIndex = random.Next(municipalityNumbers.Length);
+
+        return municipalityNumbers[randomlySelectedMunicipalityIndex];
     }
 
     public static List<AssessmentProperty> ReadMockData()
