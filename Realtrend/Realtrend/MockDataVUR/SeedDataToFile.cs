@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Xml;
-using Newtonsoft.Json;
-using Realtrend.Models; // Ensure this is the correct namespace for your models
+﻿using Newtonsoft.Json;
+using Realtrend.Models;
 
 public static class SeedDataToFile
 {
@@ -80,11 +76,9 @@ public static class SeedDataToFile
     {
         Random random = new Random();
 
-        int randomArea = random.Next(0, 1000);
+        double randomArea = random.Next(0, 1000);
 
-        double randomDecimal = random.NextDouble() * 0.99;
-
-        return Math.Round(randomArea + randomDecimal, 2);
+        return Math.Round(randomArea, 0);
     }
 
     private static double GenerateRandomPrice()
