@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using Realtrend.Models;
 
 public static class SeedDataToFile
@@ -6,13 +7,16 @@ public static class SeedDataToFile
     public static void CreateAndSaveMockData()
     {
         var properties = CreateMockAssessmentProperties();
-        var jsonString = JsonConvert.SerializeObject(properties, Newtonsoft.Json.Formatting.Indented);
+        var dateFormat = new IsoDateTimeConverter { DateTimeFormat = "dd-MM-yyyy" };
+
+        var jsonString = JsonConvert.SerializeObject(properties, Formatting.Indented, dateFormat);
         File.WriteAllText("MockData.json", jsonString);
     }
 
     private static List<AssessmentProperty> CreateMockAssessmentProperties()
     {
         List<AssessmentProperty> properties = new List<AssessmentProperty>();
+        DateTime startDate = new DateTime(2018, 1, 1);
 
         for (int i = 0; i < 10; i++)
         {
@@ -21,12 +25,12 @@ public static class SeedDataToFile
 
             var property = new AssessmentProperty
             {
-                VURejendomsid = RandomNumber(),
-                ESRejendomsnummer = RandomNumber(),
+                VURejendomsid = GenerateRandomPropertyId(),
+                ESRejendomsnummer = GenerateRandomPropertyNumber(),
                 ESRkommunenummer = GenerateRandomMunicipalityNumber(),
                 VurderingsejendomID = RandomNumber(),
-                BFENummber = bfeNumber,
-                ValueSpecifications = CreateBasicValueSpecifications(RandomNumber().ToString(), bfeNumber)
+                BFENumber = bfeNumber,
+                ValueSpecifications = CreateBasicValueSpecifications(RandomNumber().ToString(), bfeNumber, startDate)
             };
 
             properties.Add(property);
@@ -35,7 +39,7 @@ public static class SeedDataToFile
         return properties;
     }
 
-    private static List<BasicValueSpecification> CreateBasicValueSpecifications(string propertyId, int bfeNumber)
+    private static List<BasicValueSpecification> CreateBasicValueSpecifications(string propertyId, int bfeNumber, DateTime date)
     {
         List<BasicValueSpecification> specs = new List<BasicValueSpecification>();
 
@@ -43,6 +47,7 @@ public static class SeedDataToFile
         {
             var spec = new BasicValueSpecification(propertyId)
             {
+                Dato = date.AddYears(i),
                 Areal = GenerateRandomArea(),
                 Beløb = GenerateRandomPrice(),
                 EnhedBeløb = GenerateRandomPrice(),
@@ -57,10 +62,22 @@ public static class SeedDataToFile
         return specs;
     }
 
-    private static double RandomNumber()
+    private static int GenerateRandomPropertyNumber()
     {
         Random random = new Random();
-        return Math.Round(random.NextDouble() * 10000, 0);
+        return random.Next(100000, 999999);
+    }
+
+    private static int GenerateRandomPropertyId()
+    {
+        Random random = new Random();
+        return random.Next(1000000, 9999999);
+    }
+
+    private static int RandomNumber()
+    {
+        Random random = new Random();
+        return random.Next();
     }
 
     private static int GenerateRandomBfeNumber()
@@ -72,13 +89,13 @@ public static class SeedDataToFile
         return randomBfe;
     }
 
-    private static double GenerateRandomArea()
+    private static int GenerateRandomArea()
     {
         Random random = new Random();
 
-        double randomArea = random.Next(0, 1000);
+        int randomArea = random.Next(0, 1000);
 
-        return Math.Round(randomArea, 0);
+        return randomArea;
     }
 
     private static double GenerateRandomPrice()
