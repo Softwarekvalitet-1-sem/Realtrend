@@ -10,7 +10,7 @@ namespace RealTrend.UnitTests.Steps
 		public class ApiBDDTestStepDefinitions
 		{
       // Variables to be used in the tests
-      private string _address = "Provstebakken+23D";
+      private static string? _address;
       private static List<Address>? _addressList;
       private string _addressID = "0a3f50b4-876e-32b8-e044-0003ba298018";
       private string _jordstykke = "436266";
@@ -23,10 +23,10 @@ namespace RealTrend.UnitTests.Steps
       /// 
       /// Scenario: User types in a address and get address id
       /// 
-      [Given(@"the user types in a address")]
-      public void GivenTheUserTypesInAAddress()
+      [Given(@"the user types in a address (.*)")]
+      public void GivenTheUserTypesInAAddress(string address)
       {
-        _address.Should().NotBeNullOrEmpty();
+        _address = address;
       }
 
       

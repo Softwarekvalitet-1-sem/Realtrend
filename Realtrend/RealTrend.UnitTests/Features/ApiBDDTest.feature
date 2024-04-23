@@ -5,7 +5,7 @@ so i'm able to use the BFE number,
 to see information about the address.
 
 Scenario: User types in a address and get address id
-	Given the user types in a address
+	Given the user types in a address "Provstebakken+23D"
 	When the user clicks on the submit button
 	Then the user will get the correct address id
 

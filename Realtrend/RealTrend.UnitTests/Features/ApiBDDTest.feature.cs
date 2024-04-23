@@ -106,7 +106,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 await this.ScenarioStartAsync();
 #line 8
- await testRunner.GivenAsync("the user types in a address", ((string)(null)), ((Reqnroll.Table)(null)), "Given ");
+ await testRunner.GivenAsync("the user types in a address \"Provstebakken+23D\"", ((string)(null)), ((Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 9
  await testRunner.WhenAsync("the user clicks on the submit button", ((string)(null)), ((Reqnroll.Table)(null)), "When ");
