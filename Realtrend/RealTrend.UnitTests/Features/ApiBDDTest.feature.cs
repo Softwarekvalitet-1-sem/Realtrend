@@ -168,7 +168,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 await this.ScenarioStartAsync();
 #line 18
- await testRunner.GivenAsync("the system has jordstykke number \"436266\"", ((string)(null)), ((Reqnroll.Table)(null)), "Given ");
+ await testRunner.GivenAsync("the system has a jordstykke number", ((string)(null)), ((Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 19
  await testRunner.WhenAsync("the system sends the GET BFE request to the api", ((string)(null)), ((Reqnroll.Table)(null)), "When ");

@@ -76,10 +76,10 @@ namespace RealTrend.UnitTests.Steps
       /// 
       /// Scenario: System is able to find the jordstykke number from address id
       ///
-      [Given(@"the system has jordstykke number (.*)")]
-      public void GivenTheSystemHasJordstykkeNumber(string jordstykke)
+      [Given(@"the system has a jordstykke number")]
+      public void GivenTheSystemHasAJordstykkeNumber()
       {
-        _jordstykkeFromApi = jordstykke;
+        _jordstykke.Should().NotBeNullOrEmpty();
       }
 
       

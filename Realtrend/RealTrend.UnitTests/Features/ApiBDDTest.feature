@@ -15,6 +15,6 @@ Scenario: System is able to find the jordstykke number from address id
 	Then the system will retrieve the correct jordstykke number
 
 Scenario: System is able to find the BFE number from jordstykke number
-	Given the system has jordstykke number "436266"
+	Given the system has a jordstykke number
 	When the system sends the GET BFE request to the api
 	Then the system will retrieve the BFE number
