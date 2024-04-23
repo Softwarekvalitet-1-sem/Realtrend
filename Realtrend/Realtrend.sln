@@ -5,9 +5,9 @@ VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Realtrend", "Realtrend\Realtrend.csproj", "{C811CB31-BD5C-4E3F-B11B-289D218F444E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealTrend.UnitTests", "RealTrend.UnitTests\RealTrend.UnitTests.csproj", "{EF4C3388-2A97-4D20-934F-BECA491299DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealTrend.UnitTests", "RealTrend.UnitTests\RealTrend.UnitTests.csproj", "{EF4C3388-2A97-4D20-934F-BECA491299DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Realtrend.Library", "Realtrend.Library\Realtrend.Library.csproj", "{72B914CE-F4E6-4257-A68F-27752538183E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Realtrend.Library", "Realtrend.Library\Realtrend.Library.csproj", "{72B914CE-F4E6-4257-A68F-27752538183E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

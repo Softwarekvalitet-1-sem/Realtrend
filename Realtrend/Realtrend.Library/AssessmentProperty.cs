@@ -2,11 +2,11 @@
 {
     public class AssessmentProperty
     {
-        public double VURejendomsid { get; set; }
-        public double ESRejendomsnummer { get; set; }
-        public double ESRkommunenummer { get; set; }
-        public double? VurderingsejendomID { get; set; }
-        public string? BFENummber { get; set; }
+        public int VURejendomsid { get; set; }
+        public int ESRejendomsnummer { get; set; }
+        public int ESRkommunenummer { get; set; }
+        public int? VurderingsejendomID { get; set; }
+        public int? BFENumber { get; set; }
         public List<BasicValueSpecification> ValueSpecifications { get; set; }
     }
 }
