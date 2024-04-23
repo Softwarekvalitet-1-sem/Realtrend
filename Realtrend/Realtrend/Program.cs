@@ -1,7 +1,7 @@
 using FluentAssertions.Common;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using Realtrend.Interfaces;
+using Realtrend.Library.Interfaces;
 using Realtrend.Services;
 
 var builder = WebApplication.CreateBuilder(args);

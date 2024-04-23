@@ -1,4 +1,4 @@
-﻿namespace Realtrend.Models
+﻿namespace Realtrend.Library.Models
 {
     public class AssessmentProperty
     {

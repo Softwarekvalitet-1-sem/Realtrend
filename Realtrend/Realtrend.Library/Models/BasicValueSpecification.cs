@@ -1,6 +1,6 @@
 ﻿using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace Realtrend.Models
+namespace Realtrend.Library.Models
 {
     public class BasicValueSpecification
     {

@@ -1,9 +1,8 @@
-﻿using Realtrend.Interfaces;
-using Realtrend.Library;
+﻿using Realtrend.Library.Interfaces;
+using Realtrend.Library.Models;
 using System.Net;
 using System.Text.Json;
 using System.Text.RegularExpressions;
-using System.Xml.Linq;
 
 namespace Realtrend.Services
 {
@@ -115,7 +114,7 @@ namespace Realtrend.Services
                     }
                 }
 
-                return null; // Or some other appropriate default value
+                return null;
             }
             catch (HttpRequestException ex)
             {
