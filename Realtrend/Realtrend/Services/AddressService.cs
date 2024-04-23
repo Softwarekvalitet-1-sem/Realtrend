@@ -1,5 +1,5 @@
 ﻿using Realtrend.Interfaces;
-using Realtrend.Models;
+using Realtrend.Library;
 using System.Net;
 using System.Text.Json;
 using System.Text.RegularExpressions;
@@ -18,7 +18,7 @@ namespace Realtrend.Services
 
         public async Task<string> GetIdFromAddress(string address)
         {
-            return "";
+            return "66a973e3-a800-4e8d-869a-879621bcf3bc";
 
         }
 

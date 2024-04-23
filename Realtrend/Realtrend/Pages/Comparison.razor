@@ -1,4 +1,4 @@
-﻿@page "/chartpage"
+﻿@page "/comparison"
 @using Realtrend.Library
 @using BlazorBootstrap
 @using Realtrend.Models
@@ -8,15 +8,19 @@
 @inject NavigationManager NavigationManager
 
 
-<h3>Historical price chart for address: @selectedAddress</h3>
+<h3>Property Comparison</h3>
 
-<LineChart style="background-color: white; border-radius: 10px; border: 1px solid #ccc;" @ref="lineChart" Width="1400" Class="mb-4" />
+<select @onchange="OnBfeNumberSelected">
+    <option value="">Select A propertys BFE Number to compare historical prices.</option>
+    @foreach (var property in properties)
+    {
+        <option value="@property.BFENumber">@property.BFENumber</option>
+    }
+</select>
 
-
+<LineChart @ref="lineChart" Width="1400" Class="mb-4" />
 
 @code {
-    private string selectedBfe;
-    private string selectedAddress;
     private LineChart lineChart = default!;
     private LineChartOptions lineChartOptions = default!;
     private ChartData chartData = default!;
@@ -52,12 +56,19 @@
         return pairedItems;
     }
 
+    private async Task OnBfeNumberSelected(ChangeEventArgs e)
+    {
+        var selectedBfe = int.Parse(e.Value?.ToString() ?? "0");
+        if (selectedBfe != 0)
+        {
+            var values = await GetValues(selectedBfe);
+        }
+    }
+
 
     protected override async void OnInitialized()
     {
-        selectedBfe = AddressState.GetCurrentAddress().BfeNumber;
-
-        selectedAddress = AddressState.GetCurrentAddress().StreetAndHouseNumber;
+        var selectedBfe = AddressState.GetCurrentAddress().BfeNumber;
 
         var values = await GetValues(int.Parse(selectedBfe));
         var colors = ColorBuilder.CategoricalTwelveColors;
