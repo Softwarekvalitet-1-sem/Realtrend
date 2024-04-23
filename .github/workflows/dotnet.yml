@@ -27,4 +27,4 @@ jobs:
         run: dotnet build Realtrend/Realtrend/Realtrend.csproj --no-restore
       
       - name: Test
-        run: dotnet test --logger trx
+        run: dotnet test Realtrend/Realtrend.sln --logger trx
