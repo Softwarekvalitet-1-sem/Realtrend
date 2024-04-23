@@ -39,8 +39,8 @@ namespace RealTrend.UnitTests.Features
         public static async System.Threading.Tasks.Task FeatureSetupAsync()
         {
             testRunner = Reqnroll.TestRunnerManager.GetTestRunnerForAssembly(null, Reqnroll.xUnit.ReqnrollPlugin.XUnitParallelWorkerTracker.Instance.GetWorkerId());
-            Reqnroll.FeatureInfo featureInfo = new Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Get BFE number from a address", "As a user I want to get the BFE number from a address,\nso i\'m able to use the BFE" +
-                    " number,\nto see information about the address.", ProgrammingLanguage.CSharp, featureTags);
+            Reqnroll.FeatureInfo featureInfo = new Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Get BFE number from a address", "As a user I want to get the BFE number from a address,\r\nso i\'m able to use the BF" +
+                    "E number,\r\nto see information about the address.", ProgrammingLanguage.CSharp, featureTags);
             await testRunner.OnFeatureStartAsync(featureInfo);
         }
         

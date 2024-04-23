@@ -79,7 +79,7 @@ namespace RealTrend.UnitTests
             var basicValueSpecificationService = new BasicValueSpecificationService(httpClient);
 
             // Act
-            var actualAssessment = await basicValueSpecificationService.GetAssessment(propertyId);
+            var actualAssessment = basicValueSpecificationService.GetAssessment(propertyId);
 
             // Assert
             actualAssessment.Should().Be(expectedAssessment);

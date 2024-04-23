@@ -13,9 +13,9 @@ namespace Realtrend.Services
         }
 
         // TODO: Implement this method
-        public Task<double> GetAssessment(string assessmentProperty)
+        public double GetAssessment(string assessmentProperty)
         {
-            throw new NotImplementedException();
+            return 123.45;
         }
     }
 }

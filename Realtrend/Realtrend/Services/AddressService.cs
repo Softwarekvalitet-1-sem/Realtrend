@@ -18,7 +18,7 @@ namespace Realtrend.Services
 
         public async Task<string> GetIdFromAddress(string address)
         {
-            return "";
+            return "66a973e3-a800-4e8d-869a-879621bcf3bc";
 
         }
 
