@@ -87,14 +87,14 @@ namespace RealTrend.UnitTests.Features
             await this.TestTearDownAsync();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="User types in a address and address id")]
+        [Xunit.SkippableFactAttribute(DisplayName="User types in a address and get address id")]
         [Xunit.TraitAttribute("FeatureTitle", "Get BFE number from a address")]
-        [Xunit.TraitAttribute("Description", "User types in a address and address id")]
-        public async System.Threading.Tasks.Task UserTypesInAAddressAndAddressId()
+        [Xunit.TraitAttribute("Description", "User types in a address and get address id")]
+        public async System.Threading.Tasks.Task UserTypesInAAddressAndGetAddressId()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            Reqnroll.ScenarioInfo scenarioInfo = new Reqnroll.ScenarioInfo("User types in a address and address id", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            Reqnroll.ScenarioInfo scenarioInfo = new Reqnroll.ScenarioInfo("User types in a address and get address id", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -112,7 +112,69 @@ this.ScenarioInitialize(scenarioInfo);
  await testRunner.WhenAsync("the user clicks on the submit button", ((string)(null)), ((Reqnroll.Table)(null)), "When ");
 #line hidden
 #line 10
- await testRunner.ThenAsync("the user will get address id", ((string)(null)), ((Reqnroll.Table)(null)), "Then ");
+ await testRunner.ThenAsync("the user will get the correct address id", ((string)(null)), ((Reqnroll.Table)(null)), "Then ");
+#line hidden
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="System is able to find the jordstykke number from address id")]
+        [Xunit.TraitAttribute("FeatureTitle", "Get BFE number from a address")]
+        [Xunit.TraitAttribute("Description", "System is able to find the jordstykke number from address id")]
+        public async System.Threading.Tasks.Task SystemIsAbleToFindTheJordstykkeNumberFromAddressId()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            Reqnroll.ScenarioInfo scenarioInfo = new Reqnroll.ScenarioInfo("System is able to find the jordstykke number from address id", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 12
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+#line 13
+ await testRunner.GivenAsync("the system has a address id", ((string)(null)), ((Reqnroll.Table)(null)), "Given ");
+#line hidden
+#line 14
+ await testRunner.WhenAsync("the system sends a GET jordstykke request to the api", ((string)(null)), ((Reqnroll.Table)(null)), "When ");
+#line hidden
+#line 15
+ await testRunner.ThenAsync("the system will retrieve the correct jordstykke number", ((string)(null)), ((Reqnroll.Table)(null)), "Then ");
+#line hidden
+            }
+            await this.ScenarioCleanupAsync();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="System is able to find the BFE number from jordstykke number")]
+        [Xunit.TraitAttribute("FeatureTitle", "Get BFE number from a address")]
+        [Xunit.TraitAttribute("Description", "System is able to find the BFE number from jordstykke number")]
+        public async System.Threading.Tasks.Task SystemIsAbleToFindTheBFENumberFromJordstykkeNumber()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            Reqnroll.ScenarioInfo scenarioInfo = new Reqnroll.ScenarioInfo("System is able to find the BFE number from jordstykke number", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 17
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                await this.ScenarioStartAsync();
+#line 18
+ await testRunner.GivenAsync("the system has jordstykke number \"436266\"", ((string)(null)), ((Reqnroll.Table)(null)), "Given ");
+#line hidden
+#line 19
+ await testRunner.WhenAsync("the system sends the GET BFE request to the api", ((string)(null)), ((Reqnroll.Table)(null)), "When ");
+#line hidden
+#line 20
+ await testRunner.ThenAsync("the system will retrieve the BFE number", ((string)(null)), ((Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
