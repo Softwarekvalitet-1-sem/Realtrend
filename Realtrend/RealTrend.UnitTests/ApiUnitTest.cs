@@ -53,7 +53,7 @@ namespace RealTrend.UnitTests
         {
             var addressService = new AddressService(new HttpClient());
             bool result = await addressService.ValidateAddress(address);
-            Assert.Equal(expected, result); //Test
+            Assert.Equal(expected, result);
         }
 
         [Theory]
