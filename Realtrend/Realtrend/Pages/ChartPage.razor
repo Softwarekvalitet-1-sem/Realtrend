@@ -1,24 +1,114 @@
 ﻿@page "/chartpage"
-@using Realtrend.Library;
-@using Realtrend.Services;
+@using Realtrend.Library
+@using BlazorBootstrap
+@using Realtrend.Models
+@using Realtrend.Services
+@inject AddressStateService AddressState
+@inject PropertyDataService PropertyDataService
+@inject NavigationManager NavigationManager
 
-@inject AddressStateService AddressState;
 
-<h3>ChartPage</h3>
-<h3>Address Details</h3>
-<p>Street: @currentAddress.StreetAndHouseNumber</p>
-<p>Zip Code: @currentAddress.ZipCode</p>
-<p>City: @currentAddress.City</p>
-<p>Address ID: @currentAddress.AddressId</p>
-<p>Jordstykke: @currentAddress.Jordstykke</p>
-<p>BFE Number: @currentAddress.BfeNumber</p>
+<h3>Historical price chart for address: @selectedAddress</h3>
+
+<LineChart style="background-color: white; border-radius: 10px; border: 1px solid #ccc;" @ref="lineChart" Width="1400" Class="mb-4" />
+
 
 
 @code {
-    private UserAddress currentAddress;
+    private string selectedBfe;
+    private string selectedAddress;
+    private LineChart lineChart = default!;
+    private LineChartOptions lineChartOptions = default!;
+    private ChartData chartData = default!;
+    private List<PairedItem> priceData1 = new List<PairedItem>();
+    private List<AssessmentProperty> properties = new List<AssessmentProperty>();
 
-    protected override void OnInitialized()
+    public class PairedItem
     {
-        currentAddress = AddressState.GetCurrentAddress();
+        public double Beløb { get; set; }
+        public DateTime Dato { get; set; }
     }
+
+    private async Task<List<PairedItem>> GetValues(int bfeNumber)
+    {
+        var property = await PropertyDataService.GetPropertyByBfeNumberAsync(bfeNumber);
+
+        var valueSpecifications = property.ValueSpecifications;
+
+        var pairedItems = new List<PairedItem>();
+
+        foreach (var item in valueSpecifications)
+        {
+            // Create a new PairedItem object for each Dato and Beløb pair
+            var pairedItem = new PairedItem
+                {
+                    Dato = item.Dato, // Assuming Dato is already a DateTime
+                    Beløb = item.Beløb // Assuming Beløb is already a double
+                };
+
+            pairedItems.Add(pairedItem); // Add the PairedItem to the list
+        }
+
+        return pairedItems;
+    }
+
+
+    protected override async void OnInitialized()
+    {
+        selectedBfe = AddressState.GetCurrentAddress().BfeNumber;
+
+        selectedAddress = AddressState.GetCurrentAddress().StreetAndHouseNumber;
+
+        var values = await GetValues(int.Parse(selectedBfe));
+        var colors = ColorBuilder.CategoricalTwelveColors;
+
+        var labels = values.Select(item => item.Dato.ToString("yyyy")).ToList();
+        var datasets = new List<IChartDataset>();
+
+        var beløbData = values.Select(item => item.Beløb).ToList();
+
+        var dataset1 = new LineChartDataset()
+            {
+                Label = $"Bfe: {selectedBfe}",
+                Data = beløbData,
+                BackgroundColor = new List<string> { colors[0] },
+                BorderColor = new List<string> { colors[0] },
+                BorderWidth = new List<double> { 2 },
+                HoverBorderWidth = new List<double> { 4 },
+                PointBackgroundColor = new List<string> { colors[0] },
+                PointRadius = new List<int> { 0 }, // hide points
+                PointHoverRadius = new List<int> { 4 },
+            };
+        datasets.Add(dataset1);
+
+        chartData = new ChartData
+            {
+                Labels = labels,
+                Datasets = datasets
+            };
+
+        lineChartOptions = new();
+        lineChartOptions.Responsive = true;
+        lineChartOptions.Interaction = new Interaction { Mode = InteractionMode.Index };
+
+
+        lineChartOptions.Scales.X.Title.Text = "Dato";
+        lineChartOptions.Scales.X.Title.Display = true;
+
+        lineChartOptions.Scales.Y.Title.Text = "Boligværdi";
+        lineChartOptions.Scales.Y.Title.Display = true;
+
+        lineChartOptions.Plugins.Title.Text = "Boligpris sammenligning";
+        lineChartOptions.Plugins.Title.Display = true;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await lineChart.InitializeAsync(chartData, lineChartOptions);
+        }
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
 }
