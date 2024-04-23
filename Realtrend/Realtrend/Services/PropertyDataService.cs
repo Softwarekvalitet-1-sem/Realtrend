@@ -1,18 +1,21 @@
 ﻿using Newtonsoft.Json;
-using Realtrend.Models;
+using Realtrend.Library.Models;
 
 public class PropertyDataService
 {
-    private readonly string _mockDataPath = "./MockData.json"; // Adjust the path as necessary.
+    //Path to mockdata file.
+    private readonly string _mockDataPath = "./MockData.json";
 
-    public async Task<AssessmentProperty> GetPropertyByBfeNumberAsync(int bfeNumber)
+    //Get AssessmentProperty from mockdata file using bfeNumber as parameter.
+    public async Task<AssessmentProperty> GetAssessmentPropertyByBfeNumberAsync(int bfeNumber)
     {
         var json = await File.ReadAllTextAsync(_mockDataPath);
         var properties = JsonConvert.DeserializeObject<List<AssessmentProperty>>(json);
         return properties.FirstOrDefault(p => p.BFENumber == bfeNumber);
     }
 
-    public async Task<List<AssessmentProperty>> GetAllPropertiesAsync()
+    //Get all AssessmentProperties from Mockdata file.
+    public async Task<List<AssessmentProperty>> GetAllAssessmentPropertiesAsync()
     {
         var json = await File.ReadAllTextAsync(_mockDataPath);
         return JsonConvert.DeserializeObject<List<AssessmentProperty>>(json);

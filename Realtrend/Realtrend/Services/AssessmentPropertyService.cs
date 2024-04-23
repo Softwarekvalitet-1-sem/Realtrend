@@ -1,5 +1,5 @@
-﻿using Realtrend.Interfaces;
-using Realtrend.Models;
+﻿using Realtrend.Library.Interfaces;
+using Realtrend.Library.Models;
 
 namespace Realtrend.Services
 {

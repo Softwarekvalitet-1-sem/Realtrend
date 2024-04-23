@@ -1,6 +1,6 @@
-﻿using Realtrend.Models;
+﻿using Realtrend.Library.Models;
 
-namespace Realtrend.Interfaces
+namespace Realtrend.Library.Interfaces
 {
     public interface IAssessmentProperty
     {

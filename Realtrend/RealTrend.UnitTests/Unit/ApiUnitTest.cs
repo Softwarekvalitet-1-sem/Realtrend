@@ -2,14 +2,14 @@ using FluentAssertions;
 using Moq;
 using Moq.Protected;
 using Newtonsoft.Json;
-using Realtrend.Library;
+using Realtrend.Library.Models;
 using Realtrend.Services;
 using RealTrend.UnitTests.DataClasses;
 using System.Net;
 
-namespace RealTrend.UnitTests
+namespace RealTrend.UnitTests.Unit
 {
-    public class Api_unit_tests
+    public class ApiUnitTests
     {
         // Mock af HttpClient og test af GetIdFromAddress metode.
         // Vi opretter en mock af HttpClient for at simulere et kald til en ekstern API.
