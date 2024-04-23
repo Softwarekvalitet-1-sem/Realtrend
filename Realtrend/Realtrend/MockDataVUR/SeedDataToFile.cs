@@ -1,9 +1,10 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using Realtrend.Models;
+using Realtrend.Library.Models;
 
 public static class SeedDataToFile
 {
+    //Opretter mockdata filen med navnet MockData.json.
     public static void CreateAndSaveMockData()
     {
         var properties = CreateMockAssessmentProperties();
@@ -13,6 +14,8 @@ public static class SeedDataToFile
         File.WriteAllText("MockData.json", jsonString);
     }
 
+    //Opretter 10 forskellige AssessmentProperty mock objekter, den første med Seebladsgade 1's BFE Nummer
+    //Resten med random data.
     private static List<AssessmentProperty> CreateMockAssessmentProperties()
     {
         List<AssessmentProperty> properties = new List<AssessmentProperty>();
@@ -38,6 +41,7 @@ public static class SeedDataToFile
         return properties;
     }
 
+    //Opretter 5 BasicValueSpecification objekter som indeholdes i hver AssessmentProperty.
     private static List<BasicValueSpecification> CreateBasicValueSpecifications(string propertyId, int bfeNumber, DateTime date)
     {
         List<BasicValueSpecification> specs = new List<BasicValueSpecification>();
@@ -61,24 +65,29 @@ public static class SeedDataToFile
         return specs;
     }
 
+    //Opretter et random property number, som har 6 cifre.
     private static int GenerateRandomPropertyNumber()
     {
         Random random = new Random();
         return random.Next(100000, 999999);
     }
 
+    //Opretter et random property ID, som har 7 cifre.
     private static int GenerateRandomPropertyId()
     {
         Random random = new Random();
         return random.Next(1000000, 9999999);
     }
 
+    //Opretter et totalt random number
     private static int RandomNumber()
     {
         Random random = new Random();
         return random.Next();
     }
 
+    //Opretter et random BFE nummer med 7 cifre, med index som parameter 
+    //Ved index 0 oprettes Seebladsgades BFE nummer, da resten er random. 
     private static int GenerateRandomBfeNumber(int index)
     {
         if (index == 0)
@@ -95,6 +104,7 @@ public static class SeedDataToFile
         }
     }
 
+    //Opretter et random areal til AssessmentProperty
     private static int GenerateRandomArea()
     {
         Random random = new Random();
@@ -104,6 +114,7 @@ public static class SeedDataToFile
         return randomArea;
     }
 
+    //Opretter en random pris imellem 1.000.000 og 10.000.000
     private static double GenerateRandomPrice()
     {
         Random random = new Random();
@@ -115,6 +126,7 @@ public static class SeedDataToFile
         return Math.Round(randomPrice + randomDecimal, 2);
     }
 
+    //Giver et random kommunenummer fra listen til en AssessmentProperty.
     private static int GenerateRandomMunicipalityNumber()
     {
         var municipalityNumbers = new int[]
@@ -134,6 +146,7 @@ public static class SeedDataToFile
         return municipalityNumbers[randomlySelectedMunicipalityIndex];
     }
 
+    //Bruges til at læse Mockdataen.
     public static List<AssessmentProperty> ReadMockData()
     {
         var jsonString = File.ReadAllText("MockData.json");

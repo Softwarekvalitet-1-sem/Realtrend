@@ -1,4 +1,4 @@
-﻿namespace Realtrend.Library
+﻿namespace Realtrend.Library.Models
 {
     public class Address
     {

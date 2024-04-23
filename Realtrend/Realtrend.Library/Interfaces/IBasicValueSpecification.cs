@@ -1,6 +1,4 @@
-﻿using Realtrend.Models;
-
-namespace Realtrend.Interfaces
+﻿namespace Realtrend.Library.Interfaces
 {
     public interface IBasicValueSpecification
     {
