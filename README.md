@@ -9,9 +9,11 @@ The application is developed for educational purposes, in the context of PBA Sof
 ### Table of Contents
 
 1. [Installation](#installation)
-2. [Features](#features)
-3. [Tests](#tests)
-3. [About](#contributing)
+2. [Structure](#structure)
+3. [Features](#features)
+4. [Tests](#tests)
+5. [About](#contributing)
+
 
 ## Installation
 
@@ -42,20 +44,39 @@ To run Realtrend locally, follow these steps:
 Open your web browser and navigate to https://localhost:5255 to view the application.
 
 
+## Structure
+
+- **Project Root**
+  - `.github`: Workflows for Github Actions
+  - `/Realtrend`: Project folder
+    - `/Realtrend`: Blazor Web Assemble .NET 7.0
+    - `/Realtrend.Library`: Class library .NET 7.0
+    - `/Realtrend.UnitTests`: Xunit test project .NET 7.0
+
 ## Features
 
+### Addressform
+A feature that takes in a address, and convert it to a BFE number.
+
 ### Pricecharts
+A feature that shows history on price devoleopment for a given BFE number
 
 
 ## Tests
 
-### Unittest
+### Methods for development
 
-### Componenttest
+-  **TestD riven Development**
+-  **Data Driven Development**
+-  **Behaviour Driven Development**
 
-### Functionel test
+### Frameworks and tools
 
-### Integration tests
+-  **Xunit** for unit testing
+-  **Bunit** for component testing
+-  **Fluentassertations** for test readability and error handling
+-  **Moq** for mocking data
+-  **Reqnroll** for Gherkin tests
 
 ## About
 
