@@ -58,7 +58,7 @@ namespace RealTrend.UnitTests.Unit
 
         [Theory]
         [InlineData("12345", 123.45)]
-        public async Task GetAssessment_ValidPropertyId_ReturnsAssessment(string propertyId, double expectedAssessment)
+        public async Task GetAssessment_ValidPropertyId_ReturnsAssessmentInline(string propertyId, double expectedAssessment)
         {
             // Arrange
             var mockHttpMessageHandler = new Mock<HttpMessageHandler>();
@@ -84,5 +84,42 @@ namespace RealTrend.UnitTests.Unit
             // Assert
             actualAssessment.Should().Be(expectedAssessment);
         }
+
+        public static IEnumerable<object[]> MemberData()
+        {
+            yield return new object[] { "12345", 123.45 };
+        }
+        [Theory]
+        [MemberData("MemberData")]
+        public async Task GetAssessment_ValidPropertyId_ReturnsAssessmentMember(string propertyId, double expectedAssessment)
+        {
+            // Arrange
+            var mockHttpMessageHandler = new Mock<HttpMessageHandler>();
+            var response = new HttpResponseMessage
+            {
+                StatusCode = HttpStatusCode.OK,
+                Content = new StringContent(expectedAssessment.ToString())
+            };
+
+            mockHttpMessageHandler.Protected()
+                .Setup<Task<HttpResponseMessage>>(
+                                   "SendAsync",
+                                                      ItExpr.IsAny<HttpRequestMessage>(),
+                                                                         ItExpr.IsAny<CancellationToken>())
+                .ReturnsAsync(response);
+
+            var httpClient = new HttpClient(mockHttpMessageHandler.Object);
+            var basicValueSpecificationService = new BasicValueSpecificationService(httpClient);
+
+            // Act
+            var actualAssessment = basicValueSpecificationService.GetAssessment(propertyId);
+
+            // Assert
+            actualAssessment.Should().Be(expectedAssessment);
+
+
+        }
+
+
     }
 }
