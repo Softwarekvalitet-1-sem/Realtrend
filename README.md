@@ -63,7 +63,7 @@ Open your web browser and navigate to https://localhost:5255 to view the applica
 A feature that takes in a address, and convert it to a BFE number.
 
 ### Pricecharts
-A feature that shows history on price devoleopment for a given BFE number
+A feature that shows history on price development for a given BFE number
 
 
 ## Tests
@@ -82,9 +82,7 @@ A feature that shows history on price devoleopment for a given BFE number
 -  **Moq**: For mocking data
 -  **Reqnroll**: For Gherkin tests
 
-## About
-
-### Contributers
+## Contributers
 
 -  **Kasper**
 -  **Jens**
