@@ -1,4 +1,5 @@
-﻿using Realtrend.Library.Models;
+﻿using Realtrend.Library.Models.API.DataFordeler;
+using Realtrend.Library.Models.API.DataForsyning;
 
 namespace Realtrend.Library.Interfaces
 {
@@ -6,8 +7,8 @@ namespace Realtrend.Library.Interfaces
     {
         Task<string> GetIdFromAddress(string address);
         Task<bool> ValidateAddress(string address);
-        Task<IEnumerable<Address>> GetAddressResponseAsync(string address);
-        Task<string> GetJordstykkeFromAddressId(string addressId);
-        Task<string> GetBfeNumberFromJordStykke(string jordStykke);
+        Task<IEnumerable<DataForsyningAddresse>> GetDataForsyningAddressAsync(string address);
+        Task<IEnumerable<DataFordelerAddresse>> GetDataFordelerAddressAsync(string addressId);
+        Task<IEnumerable<DatafordelerGrundData>> GetDataFordelerGrundDataAsync(string jordStykke);
     }
 }

@@ -3,6 +3,8 @@ using Moq;
 using Moq.Protected;
 using Newtonsoft.Json;
 using Realtrend.Library.Models;
+using Realtrend.Library.Models.API;
+using Realtrend.Library.Models.API.DataForsyning;
 using Realtrend.Services;
 using RealTrend.UnitTests.DataClasses;
 using System.Net;
@@ -26,7 +28,7 @@ namespace RealTrend.UnitTests.Unit
             var response = new HttpResponseMessage
             {
                 StatusCode = HttpStatusCode.OK,
-                Content = new StringContent(JsonConvert.SerializeObject(new Address { Id = expectedId }))
+                Content = new StringContent(JsonConvert.SerializeObject(new DataForsyningAddresse { Id = expectedId }))
             };
 
             mockHttpMessageHandler.Protected()
@@ -48,7 +50,7 @@ namespace RealTrend.UnitTests.Unit
         }
 
         [Theory]
-        [ClassData(typeof(UserAddressTestData))]
+        [ClassData(typeof(AddressTestData))]
         public async Task IsValidAddress_ShouldWorkWithVariousInputs(string address, bool expected)
         {
             var addressService = new AddressService(new HttpClient());

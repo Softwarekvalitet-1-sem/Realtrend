@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RealTrend.UnitTests.DataClasses
 {
-    public class UserAddressTestData : IEnumerable<object[]>
+    public class AddressTestData : IEnumerable<object[]>
     {
 
         public IEnumerator<object[]> GetEnumerator()
