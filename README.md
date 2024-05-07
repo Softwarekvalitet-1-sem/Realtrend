@@ -1,5 +1,9 @@
 # REALTREND - Readme
 
+[![.NET Build and Test](https://github.com/Softwarekvalitet-1-sem/Realtrend/actions/workflows/test-and-build.yml/badge.svg)](https://github.com/Softwarekvalitet-1-sem/Realtrend/actions/workflows/test-and-build.yml)
+
+[![Lint](https://github.com/Softwarekvalitet-1-sem/Realtrend/actions/workflows/lint.yml/badge.svg)](https://github.com/Softwarekvalitet-1-sem/Realtrend/actions/workflows/lint.yml)
+
 ### Overview
 
 Welcome to Realtrend, a Blazor Server application designed to get info about BFE numbers in a userfriendly enviroment. This README aims to guide you through the setup, features, and usage of the application.
@@ -66,17 +70,17 @@ A feature that shows history on price devoleopment for a given BFE number
 
 ### Methods for development
 
--  **TestD riven Development**
+-  **Test Driven Development**
 -  **Data Driven Development**
 -  **Behaviour Driven Development**
 
 ### Frameworks and tools
 
--  **Xunit** for unit testing
--  **Bunit** for component testing
--  **Fluentassertations** for test readability and error handling
--  **Moq** for mocking data
--  **Reqnroll** for Gherkin tests
+-  **Xunit**: For unit testing
+-  **Bunit**: For component testing
+-  **Fluentassertations**: For test readability and error handling
+-  **Moq**: For mocking data
+-  **Reqnroll**: For Gherkin tests
 
 ## About
 
