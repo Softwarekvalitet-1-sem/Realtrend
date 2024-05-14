@@ -1,601 +1,601 @@
 [
   {
-    "VURejendomsid": 2435494,
-    "ESRejendomsnummer": 847703,
-    "ESRkommunenummer": 165,
-    "VurderingsejendomID": 1543605661,
+    "VURejendomsid": 3555610,
+    "ESRejendomsnummer": 989941,
+    "ESRkommunenummer": 151,
+    "VurderingsejendomID": 1683868619,
     "BFENumber": 5475678,
     "Dato": "01-01-0001",
     "ValueSpecifications": [
       {
-        "Areal": 707,
+        "Areal": 812,
         "Dato": "01-01-2018",
-        "Beløb": 2375562.44,
-        "EnhedBeløb": 8476305.63,
-        "Løbenummer": 1813885184,
-        "PrisKode": "PK2095017141",
+        "Beløb": 7246175.24,
+        "EnhedBeløb": 7665416.95,
+        "Løbenummer": 138709653,
+        "PrisKode": "PK300463375",
         "Tekst": "Beskrivelse for BFE: 5475678",
-        "RequiredVURejendomsid": "1491464835"
+        "RequiredVURejendomsid": "1059171125"
       },
       {
-        "Areal": 786,
+        "Areal": 936,
         "Dato": "01-01-2019",
-        "Beløb": 8211192.4,
-        "EnhedBeløb": 4057046.74,
-        "Løbenummer": 1525897526,
-        "PrisKode": "PK2113400607",
+        "Beløb": 9235477.39,
+        "EnhedBeløb": 3470110.73,
+        "Løbenummer": 621415674,
+        "PrisKode": "PK1016103016",
         "Tekst": "Beskrivelse for BFE: 5475678",
-        "RequiredVURejendomsid": "1491464835"
+        "RequiredVURejendomsid": "1059171125"
+      },
+      {
+        "Areal": 250,
+        "Dato": "01-01-2020",
+        "Beløb": 9095292.84,
+        "EnhedBeløb": 3149356.34,
+        "Løbenummer": 1900155336,
+        "PrisKode": "PK11867679",
+        "Tekst": "Beskrivelse for BFE: 5475678",
+        "RequiredVURejendomsid": "1059171125"
+      },
+      {
+        "Areal": 122,
+        "Dato": "01-01-2021",
+        "Beløb": 3232101.78,
+        "EnhedBeløb": 6287643.88,
+        "Løbenummer": 1648998845,
+        "PrisKode": "PK1022592687",
+        "Tekst": "Beskrivelse for BFE: 5475678",
+        "RequiredVURejendomsid": "1059171125"
+      },
+      {
+        "Areal": 726,
+        "Dato": "01-01-2022",
+        "Beløb": 9115418.53,
+        "EnhedBeløb": 9511550.46,
+        "Løbenummer": 1379150690,
+        "PrisKode": "PK1930431879",
+        "Tekst": "Beskrivelse for BFE: 5475678",
+        "RequiredVURejendomsid": "1059171125"
+      }
+    ]
+  },
+  {
+    "VURejendomsid": 4731980,
+    "ESRejendomsnummer": 576838,
+    "ESRkommunenummer": 751,
+    "VurderingsejendomID": 1564461792,
+    "BFENumber": 1459460,
+    "Dato": "01-01-0001",
+    "ValueSpecifications": [
+      {
+        "Areal": 769,
+        "Dato": "01-01-2018",
+        "Beløb": 9030387.99,
+        "EnhedBeløb": 5303643.64,
+        "Løbenummer": 2085065350,
+        "PrisKode": "PK1176596941",
+        "Tekst": "Beskrivelse for BFE: 1459460",
+        "RequiredVURejendomsid": "817477036"
+      },
+      {
+        "Areal": 191,
+        "Dato": "01-01-2019",
+        "Beløb": 5146890.55,
+        "EnhedBeløb": 1477195.58,
+        "Løbenummer": 16410249,
+        "PrisKode": "PK2109006456",
+        "Tekst": "Beskrivelse for BFE: 1459460",
+        "RequiredVURejendomsid": "817477036"
+      },
+      {
+        "Areal": 367,
+        "Dato": "01-01-2020",
+        "Beløb": 7382317.76,
+        "EnhedBeløb": 5879251.28,
+        "Løbenummer": 1261445977,
+        "PrisKode": "PK1064918399",
+        "Tekst": "Beskrivelse for BFE: 1459460",
+        "RequiredVURejendomsid": "817477036"
+      },
+      {
+        "Areal": 379,
+        "Dato": "01-01-2021",
+        "Beløb": 5068729.76,
+        "EnhedBeløb": 5326063.86,
+        "Løbenummer": 1037791049,
+        "PrisKode": "PK1251394782",
+        "Tekst": "Beskrivelse for BFE: 1459460",
+        "RequiredVURejendomsid": "817477036"
+      },
+      {
+        "Areal": 665,
+        "Dato": "01-01-2022",
+        "Beløb": 3375958.34,
+        "EnhedBeløb": 7078143.99,
+        "Løbenummer": 761982472,
+        "PrisKode": "PK1599450607",
+        "Tekst": "Beskrivelse for BFE: 1459460",
+        "RequiredVURejendomsid": "817477036"
+      }
+    ]
+  },
+  {
+    "VURejendomsid": 4406008,
+    "ESRejendomsnummer": 684397,
+    "ESRkommunenummer": 101,
+    "VurderingsejendomID": 1950363869,
+    "BFENumber": 8927864,
+    "Dato": "01-01-0001",
+    "ValueSpecifications": [
+      {
+        "Areal": 911,
+        "Dato": "01-01-2018",
+        "Beløb": 2714589.18,
+        "EnhedBeløb": 5839648.37,
+        "Løbenummer": 1538866987,
+        "PrisKode": "PK487902490",
+        "Tekst": "Beskrivelse for BFE: 8927864",
+        "RequiredVURejendomsid": "1271488710"
+      },
+      {
+        "Areal": 7,
+        "Dato": "01-01-2019",
+        "Beløb": 6524944.13,
+        "EnhedBeløb": 4152976.6,
+        "Løbenummer": 1698842815,
+        "PrisKode": "PK677686031",
+        "Tekst": "Beskrivelse for BFE: 8927864",
+        "RequiredVURejendomsid": "1271488710"
+      },
+      {
+        "Areal": 357,
+        "Dato": "01-01-2020",
+        "Beløb": 4394922.43,
+        "EnhedBeløb": 1128621.6,
+        "Løbenummer": 763411184,
+        "PrisKode": "PK1476331059",
+        "Tekst": "Beskrivelse for BFE: 8927864",
+        "RequiredVURejendomsid": "1271488710"
+      },
+      {
+        "Areal": 791,
+        "Dato": "01-01-2021",
+        "Beløb": 8485049.71,
+        "EnhedBeløb": 7474567.86,
+        "Løbenummer": 1560655708,
+        "PrisKode": "PK111757543",
+        "Tekst": "Beskrivelse for BFE: 8927864",
+        "RequiredVURejendomsid": "1271488710"
+      },
+      {
+        "Areal": 885,
+        "Dato": "01-01-2022",
+        "Beløb": 7278019.58,
+        "EnhedBeløb": 2129501.63,
+        "Løbenummer": 1569408114,
+        "PrisKode": "PK1426485",
+        "Tekst": "Beskrivelse for BFE: 8927864",
+        "RequiredVURejendomsid": "1271488710"
+      }
+    ]
+  },
+  {
+    "VURejendomsid": 6802352,
+    "ESRejendomsnummer": 441901,
+    "ESRkommunenummer": 751,
+    "VurderingsejendomID": 698487953,
+    "BFENumber": 8344588,
+    "Dato": "01-01-0001",
+    "ValueSpecifications": [
+      {
+        "Areal": 363,
+        "Dato": "01-01-2018",
+        "Beløb": 9148858.12,
+        "EnhedBeløb": 2100703.69,
+        "Løbenummer": 1467957987,
+        "PrisKode": "PK1806139401",
+        "Tekst": "Beskrivelse for BFE: 8344588",
+        "RequiredVURejendomsid": "1590393272"
+      },
+      {
+        "Areal": 583,
+        "Dato": "01-01-2019",
+        "Beløb": 6295372.61,
+        "EnhedBeløb": 8485666.43,
+        "Løbenummer": 1263253144,
+        "PrisKode": "PK622195050",
+        "Tekst": "Beskrivelse for BFE: 8344588",
+        "RequiredVURejendomsid": "1590393272"
+      },
+      {
+        "Areal": 968,
+        "Dato": "01-01-2020",
+        "Beløb": 3151004.75,
+        "EnhedBeløb": 1160850.72,
+        "Løbenummer": 453786585,
+        "PrisKode": "PK612204069",
+        "Tekst": "Beskrivelse for BFE: 8344588",
+        "RequiredVURejendomsid": "1590393272"
+      },
+      {
+        "Areal": 316,
+        "Dato": "01-01-2021",
+        "Beløb": 1834254.2,
+        "EnhedBeløb": 8868007.62,
+        "Løbenummer": 1834582010,
+        "PrisKode": "PK1354906649",
+        "Tekst": "Beskrivelse for BFE: 8344588",
+        "RequiredVURejendomsid": "1590393272"
+      },
+      {
+        "Areal": 275,
+        "Dato": "01-01-2022",
+        "Beløb": 4016045.01,
+        "EnhedBeløb": 2030600.57,
+        "Løbenummer": 1456428799,
+        "PrisKode": "PK855530652",
+        "Tekst": "Beskrivelse for BFE: 8344588",
+        "RequiredVURejendomsid": "1590393272"
+      }
+    ]
+  },
+  {
+    "VURejendomsid": 8379713,
+    "ESRejendomsnummer": 283130,
+    "ESRkommunenummer": 151,
+    "VurderingsejendomID": 455908433,
+    "BFENumber": 8002001,
+    "Dato": "01-01-0001",
+    "ValueSpecifications": [
+      {
+        "Areal": 257,
+        "Dato": "01-01-2018",
+        "Beløb": 1430388.41,
+        "EnhedBeløb": 3393965.83,
+        "Løbenummer": 643234455,
+        "PrisKode": "PK1880562689",
+        "Tekst": "Beskrivelse for BFE: 8002001",
+        "RequiredVURejendomsid": "1430442756"
+      },
+      {
+        "Areal": 525,
+        "Dato": "01-01-2019",
+        "Beløb": 2608887.98,
+        "EnhedBeløb": 2452005.48,
+        "Løbenummer": 1687794498,
+        "PrisKode": "PK209758976",
+        "Tekst": "Beskrivelse for BFE: 8002001",
+        "RequiredVURejendomsid": "1430442756"
+      },
+      {
+        "Areal": 971,
+        "Dato": "01-01-2020",
+        "Beløb": 8364333.21,
+        "EnhedBeløb": 6113370.58,
+        "Løbenummer": 1280837905,
+        "PrisKode": "PK967374257",
+        "Tekst": "Beskrivelse for BFE: 8002001",
+        "RequiredVURejendomsid": "1430442756"
+      },
+      {
+        "Areal": 63,
+        "Dato": "01-01-2021",
+        "Beløb": 2677060.01,
+        "EnhedBeløb": 1573240.08,
+        "Løbenummer": 985986196,
+        "PrisKode": "PK696712856",
+        "Tekst": "Beskrivelse for BFE: 8002001",
+        "RequiredVURejendomsid": "1430442756"
+      },
+      {
+        "Areal": 772,
+        "Dato": "01-01-2022",
+        "Beløb": 6930804.26,
+        "EnhedBeløb": 6447572.75,
+        "Løbenummer": 389267215,
+        "PrisKode": "PK929449049",
+        "Tekst": "Beskrivelse for BFE: 8002001",
+        "RequiredVURejendomsid": "1430442756"
+      }
+    ]
+  },
+  {
+    "VURejendomsid": 6642451,
+    "ESRejendomsnummer": 253365,
+    "ESRkommunenummer": 461,
+    "VurderingsejendomID": 345457340,
+    "BFENumber": 7784914,
+    "Dato": "01-01-0001",
+    "ValueSpecifications": [
+      {
+        "Areal": 577,
+        "Dato": "01-01-2018",
+        "Beløb": 7789156.58,
+        "EnhedBeløb": 6402455.74,
+        "Løbenummer": 1364766298,
+        "PrisKode": "PK1476386269",
+        "Tekst": "Beskrivelse for BFE: 7784914",
+        "RequiredVURejendomsid": "1589697401"
+      },
+      {
+        "Areal": 537,
+        "Dato": "01-01-2019",
+        "Beløb": 2389808.71,
+        "EnhedBeløb": 7319450.39,
+        "Løbenummer": 1812686563,
+        "PrisKode": "PK1089558027",
+        "Tekst": "Beskrivelse for BFE: 7784914",
+        "RequiredVURejendomsid": "1589697401"
+      },
+      {
+        "Areal": 249,
+        "Dato": "01-01-2020",
+        "Beløb": 8325793.92,
+        "EnhedBeløb": 4225754.97,
+        "Løbenummer": 1116508100,
+        "PrisKode": "PK1150328293",
+        "Tekst": "Beskrivelse for BFE: 7784914",
+        "RequiredVURejendomsid": "1589697401"
+      },
+      {
+        "Areal": 334,
+        "Dato": "01-01-2021",
+        "Beløb": 9018167.99,
+        "EnhedBeløb": 9072406.29,
+        "Løbenummer": 94927708,
+        "PrisKode": "PK1155430304",
+        "Tekst": "Beskrivelse for BFE: 7784914",
+        "RequiredVURejendomsid": "1589697401"
+      },
+      {
+        "Areal": 265,
+        "Dato": "01-01-2022",
+        "Beløb": 8072819.3,
+        "EnhedBeløb": 8505587.15,
+        "Løbenummer": 753069922,
+        "PrisKode": "PK1036924618",
+        "Tekst": "Beskrivelse for BFE: 7784914",
+        "RequiredVURejendomsid": "1589697401"
+      }
+    ]
+  },
+  {
+    "VURejendomsid": 5008353,
+    "ESRejendomsnummer": 772149,
+    "ESRkommunenummer": 151,
+    "VurderingsejendomID": 1933124899,
+    "BFENumber": 3943856,
+    "Dato": "01-01-0001",
+    "ValueSpecifications": [
+      {
+        "Areal": 750,
+        "Dato": "01-01-2018",
+        "Beløb": 5387650.39,
+        "EnhedBeløb": 5919734.67,
+        "Løbenummer": 1714784809,
+        "PrisKode": "PK1866504817",
+        "Tekst": "Beskrivelse for BFE: 3943856",
+        "RequiredVURejendomsid": "707974354"
+      },
+      {
+        "Areal": 876,
+        "Dato": "01-01-2019",
+        "Beløb": 3424258.39,
+        "EnhedBeløb": 8990909.06,
+        "Løbenummer": 225258931,
+        "PrisKode": "PK1090155061",
+        "Tekst": "Beskrivelse for BFE: 3943856",
+        "RequiredVURejendomsid": "707974354"
       },
       {
         "Areal": 726,
         "Dato": "01-01-2020",
-        "Beløb": 1609867.61,
-        "EnhedBeløb": 4225019.29,
-        "Løbenummer": 294269630,
-        "PrisKode": "PK2004740285",
-        "Tekst": "Beskrivelse for BFE: 5475678",
-        "RequiredVURejendomsid": "1491464835"
-      },
-      {
-        "Areal": 604,
-        "Dato": "01-01-2021",
-        "Beløb": 1236361.91,
-        "EnhedBeløb": 8127483.42,
-        "Løbenummer": 1025725203,
-        "PrisKode": "PK2022120106",
-        "Tekst": "Beskrivelse for BFE: 5475678",
-        "RequiredVURejendomsid": "1491464835"
-      },
-      {
-        "Areal": 279,
-        "Dato": "01-01-2022",
-        "Beløb": 2004909.91,
-        "EnhedBeløb": 1675365.28,
-        "Løbenummer": 1655287101,
-        "PrisKode": "PK1484805815",
-        "Tekst": "Beskrivelse for BFE: 5475678",
-        "RequiredVURejendomsid": "1491464835"
-      }
-    ]
-  },
-  {
-    "VURejendomsid": 3570244,
-    "ESRejendomsnummer": 447830,
-    "ESRkommunenummer": 461,
-    "VurderingsejendomID": 629063534,
-    "BFENumber": 1079899,
-    "Dato": "01-01-0001",
-    "ValueSpecifications": [
-      {
-        "Areal": 688,
-        "Dato": "01-01-2018",
-        "Beløb": 2156403.92,
-        "EnhedBeløb": 8347295.71,
-        "Løbenummer": 459264783,
-        "PrisKode": "PK212459633",
-        "Tekst": "Beskrivelse for BFE: 1079899",
-        "RequiredVURejendomsid": "1770956627"
-      },
-      {
-        "Areal": 53,
-        "Dato": "01-01-2019",
-        "Beløb": 7337406.0,
-        "EnhedBeløb": 9133257.62,
-        "Løbenummer": 1275394240,
-        "PrisKode": "PK1128631302",
-        "Tekst": "Beskrivelse for BFE: 1079899",
-        "RequiredVURejendomsid": "1770956627"
-      },
-      {
-        "Areal": 916,
-        "Dato": "01-01-2020",
-        "Beløb": 2095615.27,
-        "EnhedBeløb": 5526182.13,
-        "Løbenummer": 846825665,
-        "PrisKode": "PK1337541447",
-        "Tekst": "Beskrivelse for BFE: 1079899",
-        "RequiredVURejendomsid": "1770956627"
-      },
-      {
-        "Areal": 821,
-        "Dato": "01-01-2021",
-        "Beløb": 8717564.29,
-        "EnhedBeløb": 9306375.6,
-        "Løbenummer": 1785425613,
-        "PrisKode": "PK1832708305",
-        "Tekst": "Beskrivelse for BFE: 1079899",
-        "RequiredVURejendomsid": "1770956627"
-      },
-      {
-        "Areal": 659,
-        "Dato": "01-01-2022",
-        "Beløb": 2597248.36,
-        "EnhedBeløb": 5775691.77,
-        "Løbenummer": 1414184679,
-        "PrisKode": "PK1049757086",
-        "Tekst": "Beskrivelse for BFE: 1079899",
-        "RequiredVURejendomsid": "1770956627"
-      }
-    ]
-  },
-  {
-    "VURejendomsid": 5282452,
-    "ESRejendomsnummer": 105735,
-    "ESRkommunenummer": 461,
-    "VurderingsejendomID": 264151643,
-    "BFENumber": 4667881,
-    "Dato": "01-01-0001",
-    "ValueSpecifications": [
-      {
-        "Areal": 56,
-        "Dato": "01-01-2018",
-        "Beløb": 8815462.45,
-        "EnhedBeløb": 7516847.08,
-        "Løbenummer": 514781057,
-        "PrisKode": "PK1665656501",
-        "Tekst": "Beskrivelse for BFE: 4667881",
-        "RequiredVURejendomsid": "146278808"
-      },
-      {
-        "Areal": 121,
-        "Dato": "01-01-2019",
-        "Beløb": 7137405.63,
-        "EnhedBeløb": 2728666.91,
-        "Løbenummer": 1726619666,
-        "PrisKode": "PK1979103772",
-        "Tekst": "Beskrivelse for BFE: 4667881",
-        "RequiredVURejendomsid": "146278808"
-      },
-      {
-        "Areal": 259,
-        "Dato": "01-01-2020",
-        "Beløb": 8556676.67,
-        "EnhedBeløb": 7204585.85,
-        "Løbenummer": 179615,
-        "PrisKode": "PK1072455876",
-        "Tekst": "Beskrivelse for BFE: 4667881",
-        "RequiredVURejendomsid": "146278808"
-      },
-      {
-        "Areal": 716,
-        "Dato": "01-01-2021",
-        "Beløb": 1329176.43,
-        "EnhedBeløb": 4774072.37,
-        "Løbenummer": 1248237054,
-        "PrisKode": "PK423386563",
-        "Tekst": "Beskrivelse for BFE: 4667881",
-        "RequiredVURejendomsid": "146278808"
-      },
-      {
-        "Areal": 703,
-        "Dato": "01-01-2022",
-        "Beløb": 7923861.27,
-        "EnhedBeløb": 8676642.22,
-        "Løbenummer": 580567812,
-        "PrisKode": "PK280251276",
-        "Tekst": "Beskrivelse for BFE: 4667881",
-        "RequiredVURejendomsid": "146278808"
-      }
-    ]
-  },
-  {
-    "VURejendomsid": 2286427,
-    "ESRejendomsnummer": 575281,
-    "ESRkommunenummer": 101,
-    "VurderingsejendomID": 1142653830,
-    "BFENumber": 7702570,
-    "Dato": "01-01-0001",
-    "ValueSpecifications": [
-      {
-        "Areal": 672,
-        "Dato": "01-01-2018",
-        "Beløb": 1539817.88,
-        "EnhedBeløb": 3773136.98,
-        "Løbenummer": 1368378390,
-        "PrisKode": "PK412113158",
-        "Tekst": "Beskrivelse for BFE: 7702570",
-        "RequiredVURejendomsid": "700267773"
-      },
-      {
-        "Areal": 85,
-        "Dato": "01-01-2019",
-        "Beløb": 8880245.08,
-        "EnhedBeløb": 4006280.78,
-        "Løbenummer": 1756477606,
-        "PrisKode": "PK83145196",
-        "Tekst": "Beskrivelse for BFE: 7702570",
-        "RequiredVURejendomsid": "700267773"
-      },
-      {
-        "Areal": 547,
-        "Dato": "01-01-2020",
-        "Beløb": 5563797.28,
-        "EnhedBeløb": 2909833.38,
-        "Løbenummer": 971721855,
-        "PrisKode": "PK1867733471",
-        "Tekst": "Beskrivelse for BFE: 7702570",
-        "RequiredVURejendomsid": "700267773"
+        "Beløb": 1875577.49,
+        "EnhedBeløb": 6931138.39,
+        "Løbenummer": 1947004489,
+        "PrisKode": "PK762159682",
+        "Tekst": "Beskrivelse for BFE: 3943856",
+        "RequiredVURejendomsid": "707974354"
       },
       {
         "Areal": 558,
         "Dato": "01-01-2021",
-        "Beløb": 7188490.61,
-        "EnhedBeløb": 8904824.08,
-        "Løbenummer": 118475639,
-        "PrisKode": "PK483037332",
-        "Tekst": "Beskrivelse for BFE: 7702570",
-        "RequiredVURejendomsid": "700267773"
+        "Beløb": 7637874.96,
+        "EnhedBeløb": 2237867.51,
+        "Løbenummer": 962208241,
+        "PrisKode": "PK1480628007",
+        "Tekst": "Beskrivelse for BFE: 3943856",
+        "RequiredVURejendomsid": "707974354"
       },
       {
-        "Areal": 478,
+        "Areal": 671,
         "Dato": "01-01-2022",
-        "Beløb": 7921574.87,
-        "EnhedBeløb": 1886313.11,
-        "Løbenummer": 1995772264,
-        "PrisKode": "PK495602447",
-        "Tekst": "Beskrivelse for BFE: 7702570",
-        "RequiredVURejendomsid": "700267773"
+        "Beløb": 1355821.16,
+        "EnhedBeløb": 3309305.36,
+        "Løbenummer": 1113159855,
+        "PrisKode": "PK569056040",
+        "Tekst": "Beskrivelse for BFE: 3943856",
+        "RequiredVURejendomsid": "707974354"
       }
     ]
   },
   {
-    "VURejendomsid": 9102300,
-    "ESRejendomsnummer": 175488,
-    "ESRkommunenummer": 101,
-    "VurderingsejendomID": 2052217566,
-    "BFENumber": 6794347,
+    "VURejendomsid": 7314169,
+    "ESRejendomsnummer": 660352,
+    "ESRkommunenummer": 151,
+    "VurderingsejendomID": 93657112,
+    "BFENumber": 2492965,
     "Dato": "01-01-0001",
     "ValueSpecifications": [
       {
-        "Areal": 358,
+        "Areal": 614,
         "Dato": "01-01-2018",
-        "Beløb": 5386797.09,
-        "EnhedBeløb": 3751889.33,
-        "Løbenummer": 454694687,
-        "PrisKode": "PK465005931",
-        "Tekst": "Beskrivelse for BFE: 6794347",
-        "RequiredVURejendomsid": "2044653970"
+        "Beløb": 1874438.03,
+        "EnhedBeløb": 6717826.05,
+        "Løbenummer": 1598890971,
+        "PrisKode": "PK92358714",
+        "Tekst": "Beskrivelse for BFE: 2492965",
+        "RequiredVURejendomsid": "930636339"
       },
       {
-        "Areal": 679,
+        "Areal": 450,
         "Dato": "01-01-2019",
-        "Beløb": 5799533.35,
-        "EnhedBeløb": 8529433.87,
-        "Løbenummer": 860405861,
-        "PrisKode": "PK1573834271",
-        "Tekst": "Beskrivelse for BFE: 6794347",
-        "RequiredVURejendomsid": "2044653970"
+        "Beløb": 5704597.05,
+        "EnhedBeløb": 4612174.9,
+        "Løbenummer": 587241678,
+        "PrisKode": "PK666395849",
+        "Tekst": "Beskrivelse for BFE: 2492965",
+        "RequiredVURejendomsid": "930636339"
       },
       {
-        "Areal": 328,
+        "Areal": 771,
         "Dato": "01-01-2020",
-        "Beløb": 6714209.43,
-        "EnhedBeløb": 1510522.8,
-        "Løbenummer": 2098873062,
-        "PrisKode": "PK1910032292",
-        "Tekst": "Beskrivelse for BFE: 6794347",
-        "RequiredVURejendomsid": "2044653970"
+        "Beløb": 3858928.85,
+        "EnhedBeløb": 3812104.58,
+        "Løbenummer": 1703632883,
+        "PrisKode": "PK1979520331",
+        "Tekst": "Beskrivelse for BFE: 2492965",
+        "RequiredVURejendomsid": "930636339"
       },
       {
-        "Areal": 353,
+        "Areal": 111,
         "Dato": "01-01-2021",
-        "Beløb": 1788371.88,
-        "EnhedBeløb": 7648480.22,
-        "Løbenummer": 1930659833,
-        "PrisKode": "PK1248511540",
-        "Tekst": "Beskrivelse for BFE: 6794347",
-        "RequiredVURejendomsid": "2044653970"
+        "Beløb": 1156445.75,
+        "EnhedBeløb": 7807708.96,
+        "Løbenummer": 1746930921,
+        "PrisKode": "PK1102803845",
+        "Tekst": "Beskrivelse for BFE: 2492965",
+        "RequiredVURejendomsid": "930636339"
       },
       {
-        "Areal": 17,
+        "Areal": 531,
         "Dato": "01-01-2022",
-        "Beløb": 1821217.89,
-        "EnhedBeløb": 5034723.65,
-        "Løbenummer": 1754113388,
-        "PrisKode": "PK736305616",
-        "Tekst": "Beskrivelse for BFE: 6794347",
-        "RequiredVURejendomsid": "2044653970"
+        "Beløb": 6520374.88,
+        "EnhedBeløb": 8055613.65,
+        "Løbenummer": 441539467,
+        "PrisKode": "PK1672194498",
+        "Tekst": "Beskrivelse for BFE: 2492965",
+        "RequiredVURejendomsid": "930636339"
       }
     ]
   },
   {
-    "VURejendomsid": 4048885,
-    "ESRejendomsnummer": 877945,
-    "ESRkommunenummer": 165,
-    "VurderingsejendomID": 220741401,
-    "BFENumber": 3709483,
+    "VURejendomsid": 7664461,
+    "ESRejendomsnummer": 312994,
+    "ESRkommunenummer": 151,
+    "VurderingsejendomID": 1852668564,
+    "BFENumber": 3077073,
     "Dato": "01-01-0001",
     "ValueSpecifications": [
       {
-        "Areal": 94,
+        "Areal": 979,
         "Dato": "01-01-2018",
-        "Beløb": 6176875.19,
-        "EnhedBeløb": 2898804.1,
-        "Løbenummer": 1181527210,
-        "PrisKode": "PK1950288416",
-        "Tekst": "Beskrivelse for BFE: 3709483",
-        "RequiredVURejendomsid": "1954335129"
+        "Beløb": 2055985.48,
+        "EnhedBeløb": 2056802.96,
+        "Løbenummer": 1571192284,
+        "PrisKode": "PK592764822",
+        "Tekst": "Beskrivelse for BFE: 3077073",
+        "RequiredVURejendomsid": "231565624"
       },
       {
-        "Areal": 327,
+        "Areal": 393,
         "Dato": "01-01-2019",
-        "Beløb": 9521936.11,
-        "EnhedBeløb": 7643328.93,
-        "Løbenummer": 1666331550,
-        "PrisKode": "PK1648718064",
-        "Tekst": "Beskrivelse for BFE: 3709483",
-        "RequiredVURejendomsid": "1954335129"
+        "Beløb": 9218428.6,
+        "EnhedBeløb": 7802783.0,
+        "Løbenummer": 207319286,
+        "PrisKode": "PK545134713",
+        "Tekst": "Beskrivelse for BFE: 3077073",
+        "RequiredVURejendomsid": "231565624"
       },
       {
-        "Areal": 242,
+        "Areal": 271,
         "Dato": "01-01-2020",
-        "Beløb": 2653947.91,
-        "EnhedBeløb": 7891312.74,
-        "Løbenummer": 546018801,
-        "PrisKode": "PK50821503",
-        "Tekst": "Beskrivelse for BFE: 3709483",
-        "RequiredVURejendomsid": "1954335129"
+        "Beløb": 8045140.19,
+        "EnhedBeløb": 9139229.43,
+        "Løbenummer": 1036360086,
+        "PrisKode": "PK1935085109",
+        "Tekst": "Beskrivelse for BFE: 3077073",
+        "RequiredVURejendomsid": "231565624"
       },
       {
-        "Areal": 964,
+        "Areal": 131,
         "Dato": "01-01-2021",
-        "Beløb": 7221304.89,
-        "EnhedBeløb": 6252486.03,
-        "Løbenummer": 1514114290,
-        "PrisKode": "PK941513875",
-        "Tekst": "Beskrivelse for BFE: 3709483",
-        "RequiredVURejendomsid": "1954335129"
+        "Beløb": 2295692.01,
+        "EnhedBeløb": 2161401.78,
+        "Løbenummer": 902804039,
+        "PrisKode": "PK1019344884",
+        "Tekst": "Beskrivelse for BFE: 3077073",
+        "RequiredVURejendomsid": "231565624"
       },
       {
-        "Areal": 261,
+        "Areal": 650,
         "Dato": "01-01-2022",
-        "Beløb": 1035441.76,
-        "EnhedBeløb": 2421547.94,
-        "Løbenummer": 1272847421,
-        "PrisKode": "PK181117892",
-        "Tekst": "Beskrivelse for BFE: 3709483",
-        "RequiredVURejendomsid": "1954335129"
+        "Beløb": 7289705.04,
+        "EnhedBeløb": 9668245.91,
+        "Løbenummer": 502079728,
+        "PrisKode": "PK380602378",
+        "Tekst": "Beskrivelse for BFE: 3077073",
+        "RequiredVURejendomsid": "231565624"
       }
     ]
   },
   {
-    "VURejendomsid": 4959826,
-    "ESRejendomsnummer": 569331,
-    "ESRkommunenummer": 461,
-    "VurderingsejendomID": 702840271,
-    "BFENumber": 1329524,
+    "VURejendomsid": 2069699,
+    "ESRejendomsnummer": 523903,
+    "ESRkommunenummer": 151,
+    "VurderingsejendomID": 593438614,
+    "BFENumber": 9684096,
     "Dato": "01-01-0001",
     "ValueSpecifications": [
       {
-        "Areal": 311,
+        "Areal": 852,
         "Dato": "01-01-2018",
-        "Beløb": 7346004.5,
-        "EnhedBeløb": 8342012.28,
-        "Løbenummer": 2038089329,
-        "PrisKode": "PK718871208",
-        "Tekst": "Beskrivelse for BFE: 1329524",
-        "RequiredVURejendomsid": "1304454463"
+        "Beløb": 3297122.6,
+        "EnhedBeløb": 2545508.45,
+        "Løbenummer": 88284141,
+        "PrisKode": "PK378779541",
+        "Tekst": "Beskrivelse for BFE: 9684096",
+        "RequiredVURejendomsid": "167074454"
       },
       {
-        "Areal": 647,
+        "Areal": 607,
         "Dato": "01-01-2019",
-        "Beløb": 6599671.83,
-        "EnhedBeløb": 8233647.46,
-        "Løbenummer": 683452112,
-        "PrisKode": "PK2016162345",
-        "Tekst": "Beskrivelse for BFE: 1329524",
-        "RequiredVURejendomsid": "1304454463"
+        "Beløb": 7492231.66,
+        "EnhedBeløb": 3018662.05,
+        "Løbenummer": 193220797,
+        "PrisKode": "PK2005221262",
+        "Tekst": "Beskrivelse for BFE: 9684096",
+        "RequiredVURejendomsid": "167074454"
       },
       {
-        "Areal": 204,
+        "Areal": 253,
         "Dato": "01-01-2020",
-        "Beløb": 6098947.29,
-        "EnhedBeløb": 6495237.04,
-        "Løbenummer": 753313815,
-        "PrisKode": "PK1665437200",
-        "Tekst": "Beskrivelse for BFE: 1329524",
-        "RequiredVURejendomsid": "1304454463"
+        "Beløb": 9414870.44,
+        "EnhedBeløb": 1465048.26,
+        "Løbenummer": 1726736168,
+        "PrisKode": "PK1659430150",
+        "Tekst": "Beskrivelse for BFE: 9684096",
+        "RequiredVURejendomsid": "167074454"
       },
       {
-        "Areal": 729,
+        "Areal": 477,
         "Dato": "01-01-2021",
-        "Beløb": 9017230.68,
-        "EnhedBeløb": 5820245.51,
-        "Løbenummer": 1321859518,
-        "PrisKode": "PK2034873117",
-        "Tekst": "Beskrivelse for BFE: 1329524",
-        "RequiredVURejendomsid": "1304454463"
+        "Beløb": 7649055.71,
+        "EnhedBeløb": 6706119.13,
+        "Løbenummer": 611614723,
+        "PrisKode": "PK2080670842",
+        "Tekst": "Beskrivelse for BFE: 9684096",
+        "RequiredVURejendomsid": "167074454"
       },
       {
-        "Areal": 369,
+        "Areal": 381,
         "Dato": "01-01-2022",
-        "Beløb": 2801316.19,
-        "EnhedBeløb": 7485931.12,
-        "Løbenummer": 1314825844,
-        "PrisKode": "PK957243556",
-        "Tekst": "Beskrivelse for BFE: 1329524",
-        "RequiredVURejendomsid": "1304454463"
-      }
-    ]
-  },
-  {
-    "VURejendomsid": 7988137,
-    "ESRejendomsnummer": 165909,
-    "ESRkommunenummer": 461,
-    "VurderingsejendomID": 1280515201,
-    "BFENumber": 3035476,
-    "Dato": "01-01-0001",
-    "ValueSpecifications": [
-      {
-        "Areal": 277,
-        "Dato": "01-01-2018",
-        "Beløb": 5195140.63,
-        "EnhedBeløb": 1433987.65,
-        "Løbenummer": 1297439595,
-        "PrisKode": "PK890050062",
-        "Tekst": "Beskrivelse for BFE: 3035476",
-        "RequiredVURejendomsid": "1854079769"
-      },
-      {
-        "Areal": 782,
-        "Dato": "01-01-2019",
-        "Beløb": 7438770.75,
-        "EnhedBeløb": 5091175.1,
-        "Løbenummer": 594728382,
-        "PrisKode": "PK2002147876",
-        "Tekst": "Beskrivelse for BFE: 3035476",
-        "RequiredVURejendomsid": "1854079769"
-      },
-      {
-        "Areal": 325,
-        "Dato": "01-01-2020",
-        "Beløb": 9967618.62,
-        "EnhedBeløb": 8530015.31,
-        "Løbenummer": 118572787,
-        "PrisKode": "PK1504933441",
-        "Tekst": "Beskrivelse for BFE: 3035476",
-        "RequiredVURejendomsid": "1854079769"
-      },
-      {
-        "Areal": 18,
-        "Dato": "01-01-2021",
-        "Beløb": 9696719.56,
-        "EnhedBeløb": 4490656.55,
-        "Løbenummer": 24248805,
-        "PrisKode": "PK925536755",
-        "Tekst": "Beskrivelse for BFE: 3035476",
-        "RequiredVURejendomsid": "1854079769"
-      },
-      {
-        "Areal": 484,
-        "Dato": "01-01-2022",
-        "Beløb": 6658111.04,
-        "EnhedBeløb": 9992266.39,
-        "Løbenummer": 338994371,
-        "PrisKode": "PK1133030889",
-        "Tekst": "Beskrivelse for BFE: 3035476",
-        "RequiredVURejendomsid": "1854079769"
-      }
-    ]
-  },
-  {
-    "VURejendomsid": 8505741,
-    "ESRejendomsnummer": 746496,
-    "ESRkommunenummer": 751,
-    "VurderingsejendomID": 1262677302,
-    "BFENumber": 5041359,
-    "Dato": "01-01-0001",
-    "ValueSpecifications": [
-      {
-        "Areal": 609,
-        "Dato": "01-01-2018",
-        "Beløb": 8820848.72,
-        "EnhedBeløb": 6779830.33,
-        "Løbenummer": 1118194193,
-        "PrisKode": "PK1249616655",
-        "Tekst": "Beskrivelse for BFE: 5041359",
-        "RequiredVURejendomsid": "560972712"
-      },
-      {
-        "Areal": 980,
-        "Dato": "01-01-2019",
-        "Beløb": 4463473.11,
-        "EnhedBeløb": 2738243.38,
-        "Løbenummer": 311493965,
-        "PrisKode": "PK1675391988",
-        "Tekst": "Beskrivelse for BFE: 5041359",
-        "RequiredVURejendomsid": "560972712"
-      },
-      {
-        "Areal": 682,
-        "Dato": "01-01-2020",
-        "Beløb": 6136187.88,
-        "EnhedBeløb": 7090191.59,
-        "Løbenummer": 728837142,
-        "PrisKode": "PK1037560255",
-        "Tekst": "Beskrivelse for BFE: 5041359",
-        "RequiredVURejendomsid": "560972712"
-      },
-      {
-        "Areal": 577,
-        "Dato": "01-01-2021",
-        "Beløb": 1249392.31,
-        "EnhedBeløb": 1807974.28,
-        "Løbenummer": 1650051198,
-        "PrisKode": "PK1745808028",
-        "Tekst": "Beskrivelse for BFE: 5041359",
-        "RequiredVURejendomsid": "560972712"
-      },
-      {
-        "Areal": 387,
-        "Dato": "01-01-2022",
-        "Beløb": 4985401.05,
-        "EnhedBeløb": 2738463.81,
-        "Løbenummer": 1123626287,
-        "PrisKode": "PK1732617122",
-        "Tekst": "Beskrivelse for BFE: 5041359",
-        "RequiredVURejendomsid": "560972712"
-      }
-    ]
-  },
-  {
-    "VURejendomsid": 1196091,
-    "ESRejendomsnummer": 864032,
-    "ESRkommunenummer": 101,
-    "VurderingsejendomID": 1762339095,
-    "BFENumber": 2665376,
-    "Dato": "01-01-0001",
-    "ValueSpecifications": [
-      {
-        "Areal": 483,
-        "Dato": "01-01-2018",
-        "Beløb": 3636323.47,
-        "EnhedBeløb": 1890885.38,
-        "Løbenummer": 1030705302,
-        "PrisKode": "PK1396205897",
-        "Tekst": "Beskrivelse for BFE: 2665376",
-        "RequiredVURejendomsid": "1708498406"
-      },
-      {
-        "Areal": 189,
-        "Dato": "01-01-2019",
-        "Beløb": 3354639.25,
-        "EnhedBeløb": 9026744.6,
-        "Løbenummer": 1054538164,
-        "PrisKode": "PK251088391",
-        "Tekst": "Beskrivelse for BFE: 2665376",
-        "RequiredVURejendomsid": "1708498406"
-      },
-      {
-        "Areal": 242,
-        "Dato": "01-01-2020",
-        "Beløb": 4054080.28,
-        "EnhedBeløb": 5221156.89,
-        "Løbenummer": 479785177,
-        "PrisKode": "PK851960585",
-        "Tekst": "Beskrivelse for BFE: 2665376",
-        "RequiredVURejendomsid": "1708498406"
-      },
-      {
-        "Areal": 123,
-        "Dato": "01-01-2021",
-        "Beløb": 5027255.67,
-        "EnhedBeløb": 9948306.91,
-        "Løbenummer": 345974012,
-        "PrisKode": "PK105136209",
-        "Tekst": "Beskrivelse for BFE: 2665376",
-        "RequiredVURejendomsid": "1708498406"
-      },
-      {
-        "Areal": 722,
-        "Dato": "01-01-2022",
-        "Beløb": 9158306.06,
-        "EnhedBeløb": 5892627.68,
-        "Løbenummer": 914028082,
-        "PrisKode": "PK93552766",
-        "Tekst": "Beskrivelse for BFE: 2665376",
-        "RequiredVURejendomsid": "1708498406"
+        "Beløb": 1753785.4,
+        "EnhedBeløb": 2664494.29,
+        "Løbenummer": 1647743715,
+        "PrisKode": "PK1982448037",
+        "Tekst": "Beskrivelse for BFE: 9684096",
+        "RequiredVURejendomsid": "167074454"
       }
     ]
   }
