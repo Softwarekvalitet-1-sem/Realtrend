@@ -4,14 +4,14 @@ namespace Realtrend.Services
 {
     public class AddressStateService
     {
-        public UserAddress CurrentAddress { get; set; }
+        public Address CurrentAddress { get; set; }
 
-        public void SetCurrentAddress(UserAddress address)
+        public void SetCurrentAddress(Address address)
         {
             CurrentAddress = address;
         }
 
-        public UserAddress GetCurrentAddress()
+        public Address GetCurrentAddress()
         {
             return CurrentAddress;
         }

@@ -1,8 +1,8 @@
-using Realtrend.Library.Models;
 using Reqnroll;
 using FluentAssertions;
 using Newtonsoft.Json;
 using System.Text.Json;
+using Realtrend.Library.Models.API.DataForsyning;
 
 namespace RealTrend.UnitTests.Req.Steps
 {
@@ -11,7 +11,7 @@ namespace RealTrend.UnitTests.Req.Steps
     {
         // Variables to be used in the tests
         private static string? _address;
-        private static List<Address>? _addressList;
+        private static List<DataForsyningAddresse>? _addressList;
         private string _addressID = "0a3f50b4-876e-32b8-e044-0003ba298018";
         private string _jordstykke = "436266";
         private string _bfeNumber = "5464000";
@@ -103,7 +103,7 @@ namespace RealTrend.UnitTests.Req.Steps
         /// 
 
         // Method to get a address id from the api
-        private static async Task<List<Address>> GetAddressesAsync(string endpoint)
+        private static async Task<List<DataForsyningAddresse>> GetAddressesAsync(string endpoint)
         {
             using (HttpClient client = new HttpClient())
             {
@@ -113,7 +113,7 @@ namespace RealTrend.UnitTests.Req.Steps
                     if (response.IsSuccessStatusCode)
                     {
                         string responseBody = await response.Content.ReadAsStringAsync();
-                        _addressList = JsonConvert.DeserializeObject<List<Address>>(responseBody);
+                        _addressList = JsonConvert.DeserializeObject<List<DataForsyningAddresse>>(responseBody);
                     }
                     else
                     {

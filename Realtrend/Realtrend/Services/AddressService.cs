@@ -1,5 +1,6 @@
 ﻿using Realtrend.Library.Interfaces;
-using Realtrend.Library.Models;
+using Realtrend.Library.Models.API.DataFordeler;
+using Realtrend.Library.Models.API.DataForsyning;
 using System.Net;
 using System.Text.Json;
 using System.Text.RegularExpressions;
@@ -31,7 +32,7 @@ namespace Realtrend.Services
         }
 
         //Gets address from dataforsyningen - Takes address as parameter.
-        public async Task<IEnumerable<Address>> GetAddressResponseAsync(string address)
+        public async Task<IEnumerable<DataForsyningAddresse>> GetDataForsyningAddressAsync(string address)
         {
             try
             {
@@ -41,8 +42,8 @@ namespace Realtrend.Services
 
                 if (response.IsSuccessStatusCode)
                 {
-                    var addresses = await response.Content.ReadFromJsonAsync<IEnumerable<Address>>();
-                    return addresses ?? Enumerable.Empty<Address>();
+                    var addresses = await response.Content.ReadFromJsonAsync<IEnumerable<DataForsyningAddresse>>();
+                    return addresses ?? Enumerable.Empty<DataForsyningAddresse>();
                 }
                 else
                 {
@@ -56,69 +57,52 @@ namespace Realtrend.Services
         }
 
         //Gets address details from datafordeler - Takes address ID as parameter.
-        public async Task<string> GetJordstykkeFromAddressId(string addressId)
+        public async Task<IEnumerable<DataFordelerAddresse>> GetDataFordelerAddressAsync(string addressId)
         {
             try
             {
-                var endpoint = $"https://services.datafordeler.dk/DAR/DAR/2.0.0/rest/adresse?id={addressId}&username=QRUSLIHSDE&password=SOFTWAREKval!tet2024";
+                var encodedId = System.Net.WebUtility.UrlEncode(addressId);
+                var endpoint = $"https://services.datafordeler.dk/DAR/DAR/2.0.0/rest/adresse?id={encodedId}&username=QRUSLIHSDE&password=SOFTWAREKval!tet2024";
                 var response = await _httpClient.GetAsync(endpoint);
 
-                if (response.IsSuccessStatusCode && response.StatusCode == HttpStatusCode.OK)
+                if (response.IsSuccessStatusCode)
                 {
-                    var jsonResponse = await response.Content.ReadAsStringAsync();
-                    using var jsonDoc = JsonDocument.Parse(jsonResponse);
-                    var rootElement = jsonDoc.RootElement;
-
-                    // Navigate to the specific jordstykke value
-                    if (rootElement.ValueKind == JsonValueKind.Array && rootElement.GetArrayLength() > 0)
-                    {
-                        var husnummer = rootElement[0].GetProperty("husnummer");
-                        if (husnummer.TryGetProperty("jordstykke", out var jordstykke))
-                        {
-                            return jordstykke.GetString();
-                        }
-                    }
-
-                    return null;
-                } else
-                {
-                    throw new HttpRequestException($"API Request failed with status code: {response.StatusCode}");
+                    var jsonData = await response.Content.ReadAsStringAsync();
+                    var addresses = await response.Content.ReadFromJsonAsync<IEnumerable<DataFordelerAddresse>>();
+                    return addresses ?? Enumerable.Empty<DataFordelerAddresse>();
                 }
-            } catch(HttpRequestException ex)
+                else
+                {
+                    throw new HttpRequestException($"API request failed with status code: {response.StatusCode}.");
+                }
+            }
+            catch (HttpRequestException ex)
             {
-                throw ex;
+                throw new HttpRequestException($"Error while requesting data: {ex.Message}", ex);
             }
         }
 
         //Gets BFE Number from datafordeler - Takes Jordstykke as parameter.
-        public async Task<string> GetBfeNumberFromJordStykke(string jordStykke)
+        public async Task<IEnumerable<DatafordelerGrundData>> GetDataFordelerGrundDataAsync(string jordStykke)
         {
             try
             {
-                var endpoint = $"https://services.datafordeler.dk//BBR/BBRPublic/1/rest/grund?jordstykke={jordStykke}&&username=QRUSLIHSDE&password=SOFTWAREKval!tet2024";
+                var endpoint = $"https://services.datafordeler.dk/BBR/BBRPublic/1/rest/grund?jordstykke={jordStykke}&username=QRUSLIHSDE&password=SOFTWAREKval!tet2024";
                 var response = await _httpClient.GetAsync(endpoint);
 
-                if (response.IsSuccessStatusCode && response.StatusCode == HttpStatusCode.OK)
+                if (response.IsSuccessStatusCode)
                 {
-                    var jsonResponse = await response.Content.ReadAsStringAsync();
-                    using var jsonDoc = JsonDocument.Parse(jsonResponse);
-                    var rootElement = jsonDoc.RootElement;
-
-                    if (rootElement.ValueKind == JsonValueKind.Array && rootElement.GetArrayLength() > 0)
-                    {
-                        var bestemtFastEjendom = rootElement[0].GetProperty("bestemtFastEjendom");
-                        if (bestemtFastEjendom.TryGetProperty("bfeNummer", out var bfeNumber))
-                        {
-                            return bfeNumber.ToString();
-                        }
-                    }
+                    var grunde = await response.Content.ReadFromJsonAsync<IEnumerable<DatafordelerGrundData>>();
+                    return grunde ?? Enumerable.Empty<DatafordelerGrundData>();
                 }
-
-                return null;
+                else
+                {
+                    throw new HttpRequestException($"API request failed with status code: {response.StatusCode}.");
+                }
             }
             catch (HttpRequestException ex)
             {
-                throw ex;
+                throw new HttpRequestException($"Error while requesting data: {ex.Message}", ex);
             }
         }
     }
