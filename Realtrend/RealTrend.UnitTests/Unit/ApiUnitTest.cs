@@ -30,7 +30,10 @@ namespace RealTrend.UnitTests.Unit
             var response = new HttpResponseMessage
             {
                 StatusCode = HttpStatusCode.OK,
-                Content = new StringContent(JsonConvert.SerializeObject(new DataForsyningAddresse { Id = expectedId }))
+                Content = new StringContent(JsonConvert.SerializeObject(new List<DataForsyningAddresse>
+        {
+            new DataForsyningAddresse { Id = expectedId }
+        }))
             };
 
             mockHttpMessageHandler.Protected()
@@ -46,11 +49,16 @@ namespace RealTrend.UnitTests.Unit
             var mockDataForsyningService = new Mock<IDataForsyningService>();
             var mockDataFordelerService = new Mock<IDataFordelerService>();
 
+            mockDataForsyningService.Setup(x => x.GetDataForsyningAddressAsync(It.IsAny<string>()))
+                .ReturnsAsync(new List<DataForsyningAddresse>
+                {
+            new DataForsyningAddresse { Id = expectedId }
+                });
+
             var addressService = new AddressService(mockAddressValidator.Object, mockDataForsyningService.Object, mockDataFordelerService.Object);
 
             // Act
             var dataForsyningAddress = await addressService.GetDataForsyningAddressAsync(address);
-
             var actualId = dataForsyningAddress.First().Id;
 
             // Assert
