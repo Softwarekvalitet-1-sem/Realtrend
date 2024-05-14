@@ -1,13 +1,12 @@
-@using Realtrend.Library.Interfaces;
-@using Realtrend.Library.Models;
-@using Realtrend.Services;
+@page "/address-form"
+@using Realtrend.Library.Interfaces
+@using Realtrend.Library.Models
+@using Realtrend.Services
 
-@inject IAddress AddressService;
+@inject IAddressService AddressService
 @inject AddressStateService AddressState
 
 <div class="d-flex justify-content-center">
-
-
     <div class="p-4" style="max-width: 700px; border-radius:30px; background-color: @GlobalColors.CustomBackgroundColor;">
         <div class="d-flex justify-content-center">
             <h5 class="text-black" style="margin-bottom: 20px;">INDTAST DIN ADRESSE</h5>
@@ -22,7 +21,6 @@
                     <input type="text" class="form-control" id="street" @bind="address.StreetAndHouseNumber" />
                 </div>
             </div>
-
 
             <div class="form-row d-flex justify-content-between mb-3">
                 <div class="col-md-6 text-md-left">
@@ -55,21 +53,30 @@
     [Parameter]
     public EventCallback OnSubmitCallback { get; set; }
 
-    private async void OnSubmit()
+    private async Task OnSubmit()
     {
         address = new Address(address.StreetAndHouseNumber, address.ZipCode, address.City);
 
         var addresses = await AddressService.GetDataForsyningAddressAsync(address.StreetAndHouseNumber);
 
-        address.AddressId = addresses.First().Id;
+        if (addresses.Any())
+        {
+            address.AddressId = addresses.First().Id;
 
-        var datafordelerAddress = await AddressService.GetDataFordelerAddressAsync(address.AddressId);
+            var datafordelerAddress = await AddressService.GetDataFordelerAddressAsync(address.AddressId);
 
-        address.Jordstykke = datafordelerAddress.First().Husnummer.Jordstykke;
+            if (datafordelerAddress.Any())
+            {
+                address.Jordstykke = datafordelerAddress.First().Husnummer.Jordstykke;
 
-        var grundData = await AddressService.GetDataFordelerGrundDataAsync(address.Jordstykke);
+                var grundData = await AddressService.GetDataFordelerGrundDataAsync(address.Jordstykke);
 
-        address.BfeNumber = grundData.First().BestemtFastEjendom.BfeNummer.ToString();
+                if (grundData.Any())
+                {
+                    address.BfeNumber = grundData.First().BestemtFastEjendom.BfeNummer.ToString();
+                }
+            }
+        }
 
         AddressState.SetCurrentAddress(address);
 

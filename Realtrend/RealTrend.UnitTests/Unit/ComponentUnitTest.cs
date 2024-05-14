@@ -16,7 +16,7 @@ namespace RealTrend.UnitTests.Unit
             // Arrange
             using var ctx = new TestContext();
             var addressStateServiceMock = new Mock<AddressStateService>();
-            var addressMock = new Mock<IAddress>();
+            var addressMock = new Mock<IAddressService>();
             ctx.Services.AddSingleton(addressStateServiceMock.Object);
             ctx.Services.AddSingleton(addressMock.Object);
 
@@ -35,7 +35,7 @@ namespace RealTrend.UnitTests.Unit
             // Arrange
             using var ctx = new TestContext();
             var addressStateServiceMock = new Mock<AddressStateService>();
-            var addressMock = new Mock<IAddress>();
+            var addressMock = new Mock<IAddressService>();
             ctx.Services.AddSingleton(addressStateServiceMock.Object);
             ctx.Services.AddSingleton(addressMock.Object);
 
