@@ -2,25 +2,31 @@
 {
     public class Address
     {
-        public string Id { get; set; }
-        public int Status { get; set; }
-        public int Darstatus { get; set; }
-        public string Vejkode { get; set; }
-        public string Vejnavn { get; set; }
-        public string Adresseringsvejnavn { get; set; }
-        public string Husnr { get; set; }
-        public string Etage { get; set; }
-        public string Dør { get; set; }
-        public string Supplerendebynavn { get; set; }
-        public string Postnr { get; set; }
-        public string Postnrnavn { get; set; }
-        public string Stormodtagerpostnr { get; set; }
-        public string Stormodtagerpostnrnavn { get; set; }
-        public string Kommunekode { get; set; }
-        public string Adgangsadresseid { get; set; }
-        public double X { get; set; }
-        public double Y { get; set; }
-        public string Href { get; set; }
-        public string Betegnelse { get; set; }
+        public string? StreetAndHouseNumber { get; set; }
+        public string? ZipCode { get; set; }
+        public string? City { get; set; }
+        public string? AddressId { get; set; }
+        public string? Jordstykke { get; set; }
+        public string? BfeNumber { get; set; }
+
+        public Address()
+        {
+            StreetAndHouseNumber = null;
+            ZipCode = null;
+            City = null;
+            AddressId = null;
+            Jordstykke = null;
+            BfeNumber = null;
+        }
+
+        public Address(string streetAndHouseNumber, string zipCode, string city)
+        {
+            StreetAndHouseNumber = streetAndHouseNumber;
+            ZipCode = zipCode;
+            City = city;
+            AddressId = null;
+            Jordstykke = null;
+            BfeNumber = null;
+        }
     }
 }

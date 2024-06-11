@@ -1,80 +1,83 @@
-@using Realtrend.Library.Interfaces;
-@using Realtrend.Library.Models;
-@using Realtrend.Services;
+@page "/address-form"
+@namespace Realtrend.Components
+@using Realtrend.Library.Interfaces
+@using Realtrend.Library.Models
+@using Realtrend.Services
 
-@inject IAddress AddressService;
+@inject IAddressService AddressService
 @inject AddressStateService AddressState
 
 <div class="d-flex justify-content-center">
+    <div class="p-4" style="max-width: 700px; border-radius:30px; background-color: @GlobalColors.CustomBackgroundColor;">
+        <div class="d-flex justify-content-center">
+            <h5 class="text-black" style="margin-bottom: 20px;">INDTAST DIN ADRESSE</h5>
+        </div>
 
+        <form @onsubmit="OnSubmit">
+            <div class="form-row d-flex justify-content-between mb-3">
+                <div class="col-md-6 text-md-left">
+                    <label class="text-black" for="street">Vej og husnummer:</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="street" @bind="address.StreetAndHouseNumber" />
+                </div>
+            </div>
 
-  <div class="p-4" style="max-width: 700px; border-radius:30px; background-color: @GlobalColors.CustomBackgroundColor;">
-    <div class="d-flex justify-content-center">
-      <h5 class="text-black" style="margin-bottom: 20px;">INDTAST DIN ADRESSE</h5>
+            <div class="form-row d-flex justify-content-between mb-3">
+                <div class="col-md-6 text-md-left">
+                    <label class="text-black" for="zipCode">Postnummer:</label>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <input type="text" class="form-control" id="zipCode" @bind="address.ZipCode" />
+                </div>
+            </div>
+
+            <div class="form-row d-flex justify-content-between mb-3">
+                <div class="col-md-6 text-md-left">
+                    <label class="text-black" for="city">By:</label>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <input type="text" class="form-control" id="city" @bind="address.City" />
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <input type="submit" value="Find boligvurderinger" class="btn btn-primary" style="background-color: @GlobalColors.CustomApplicationColor; margin-top: 20px;" />
+            </div>
+        </form>
     </div>
-
-    <form @onsubmit="OnSubmit">
-      <div class="form-row d-flex justify-content-between mb-3">
-        <div class="col-md-6 text-md-left">
-          <label class="text-black" for="street">Vej og husnummer:</label>
-        </div>
-        <div class="col-md-6">
-          <input type="text" class="form-control" id="street" @bind="userAddress.StreetAndHouseNumber" />
-        </div>
-      </div>
-
-
-      <div class="form-row d-flex justify-content-between mb-3">
-        <div class="col-md-6 text-md-left">
-          <label class="text-black" for="zipCode">Postnummer:</label>
-        </div>
-        <div class="col-md-6 text-md-right">
-          <input type="text" class="form-control" id="zipCode" @bind="userAddress.ZipCode" />
-        </div>
-      </div>
-
-      <div class="form-row d-flex justify-content-between mb-3">
-        <div class="col-md-6 text-md-left">
-          <label class="text-black" for="city">By:</label>
-        </div>
-        <div class="col-md-6 text-md-right">
-          <input type="text" class="form-control" id="city" @bind="userAddress.City" />
-        </div>
-      </div>
-
-      <div class="d-flex justify-content-center">
-        <input type="submit" value="Find boligvurderinger" class="btn btn-primary" style="background-color: @GlobalColors.CustomApplicationColor; margin-top: 20px;" />
-      </div>
-    </form>
-  </div>
 </div>
 
 @code {
-  private UserAddress userAddress = new UserAddress();
+    private Address address = new Address();
 
-  [Parameter]
-  public EventCallback OnSubmitCallback { get; set; }
+    [Parameter]
+    public EventCallback OnSubmitCallback { get; set; }
 
-  private async void OnSubmit()
-  {
-    userAddress = new UserAddress(userAddress.StreetAndHouseNumber, userAddress.ZipCode, userAddress.City);
+    private async Task OnSubmit()
+    {
+        address = new Address(address.StreetAndHouseNumber, address.ZipCode, address.City);
 
-    var addresses = await AddressService.GetAddressResponseAsync(userAddress.StreetAndHouseNumber);
+        var dataForsyningAddress = await AddressService.GetDataForsyningAddressAsync(address.StreetAndHouseNumber);
 
-    var addressId = addresses.First().Id;
+        address.AddressId = dataForsyningAddress.Id;
 
-    userAddress.AddressId = addressId;
+        var datafordelerAddress = await AddressService.GetDataFordelerAddressAsync(address.AddressId);
 
-    var jordStykke = await AddressService.GetJordstykkeFromAddressId(addressId);
+        if (datafordelerAddress.Any())
+        {
+            address.Jordstykke = datafordelerAddress.First().Husnummer.Jordstykke;
 
-    userAddress.Jordstykke = jordStykke;
+            var grundData = await AddressService.GetDataFordelerGrundDataAsync(address.Jordstykke);
 
-    var bfeNumber = await AddressService.GetBfeNumberFromJordStykke(jordStykke);
+            if (grundData.Any())
+            {
+                address.BfeNumber = grundData.First().BestemtFastEjendom.BfeNummer.ToString();
+            }
+        }
 
-    userAddress.BfeNumber = bfeNumber;
+        AddressState.SetCurrentAddress(address);
 
-    AddressState.SetCurrentAddress(userAddress);
-
-    await OnSubmitCallback.InvokeAsync();
-  }
+        await OnSubmitCallback.InvokeAsync();
+    }
 }
