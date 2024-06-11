@@ -17,11 +17,11 @@ namespace RealTrend.UnitTests.Unit
 {
     public class ApiUnitTests
     {
-        // Mock HttpClient and test GetIdFromAddress method.
-        // We create a mock HttpClient to simulate a call to an external API.
-        // We create a HttpResponseMessage with status code OK and an Address as content.
-        // We create an AddressService with our mock HttpClient and call the GetIdFromAddress method.
-        // We compare the expected Id with the actual Id.
+        // Mock af HttpClient og test af GetIdFromAddress metode.
+        // Vi opretter en mock af HttpClient for at simulere et kald til en ekstern API.
+        // Vi opretter en HttpResponseMessage med statuskode OK og en Address som content.
+        // Vi opretter en AddressService med vores mock HttpClient og kalder GetIdFromAddress metoden.
+        // Vi sammenligner den forventede Id med den faktiske Id.
         [Theory]
         [InlineData("Seebladsgade 1", "66a973e3-a800-4e8d-869a-879621bcf3bc")]
         public async Task GetIdFromAddress_ValidAddress_ReturnsCorrectId(string address, string expectedId)
