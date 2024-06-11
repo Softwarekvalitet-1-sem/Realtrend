@@ -1,4 +1,5 @@
 @page "/address-form"
+@namespace Realtrend.Components
 @using Realtrend.Library.Interfaces
 @using Realtrend.Library.Models
 @using Realtrend.Services
@@ -57,24 +58,21 @@
     {
         address = new Address(address.StreetAndHouseNumber, address.ZipCode, address.City);
 
-        var addresses = await AddressService.GetDataForsyningAddressAsync(address.StreetAndHouseNumber);
+        var dataForsyningAddress = await AddressService.GetDataForsyningAddressAsync(address.StreetAndHouseNumber);
 
-        if (addresses.Any())
+        address.AddressId = dataForsyningAddress.Id;
+
+        var datafordelerAddress = await AddressService.GetDataFordelerAddressAsync(address.AddressId);
+
+        if (datafordelerAddress.Any())
         {
-            address.AddressId = addresses.First().Id;
+            address.Jordstykke = datafordelerAddress.First().Husnummer.Jordstykke;
 
-            var datafordelerAddress = await AddressService.GetDataFordelerAddressAsync(address.AddressId);
+            var grundData = await AddressService.GetDataFordelerGrundDataAsync(address.Jordstykke);
 
-            if (datafordelerAddress.Any())
+            if (grundData.Any())
             {
-                address.Jordstykke = datafordelerAddress.First().Husnummer.Jordstykke;
-
-                var grundData = await AddressService.GetDataFordelerGrundDataAsync(address.Jordstykke);
-
-                if (grundData.Any())
-                {
-                    address.BfeNumber = grundData.First().BestemtFastEjendom.BfeNummer.ToString();
-                }
+                address.BfeNumber = grundData.First().BestemtFastEjendom.BfeNummer.ToString();
             }
         }
 

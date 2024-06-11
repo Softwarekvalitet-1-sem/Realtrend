@@ -8,7 +8,7 @@ namespace Realtrend.Library.Interfaces
     public interface IAddressService
     {
         Task<bool> ValidateAddress(string address);
-        Task<IEnumerable<DataForsyningAddresse>> GetDataForsyningAddressAsync(string address);
+        Task<DataForsyningAddresse> GetDataForsyningAddressAsync(string address);
         Task<IEnumerable<DataFordelerAddresse>> GetDataFordelerAddressAsync(string addressId);
         Task<IEnumerable<DatafordelerGrundData>> GetDataFordelerGrundDataAsync(string jordStykke);
     }

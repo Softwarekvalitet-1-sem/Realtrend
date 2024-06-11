@@ -16,7 +16,7 @@ namespace Realtrend.Services
             _httpClient = httpClient;
         }
 
-        public async Task<IEnumerable<DataForsyningAddresse>> GetDataForsyningAddressAsync(string address)
+        public async Task<DataForsyningAddresse> GetDataForsyningAddressAsync(string address)
         {
             var encodedAddress = System.Net.WebUtility.UrlEncode(address);
             var endpoint = $"https://api.dataforsyningen.dk/adresser?q={encodedAddress}&struktur=mini";
@@ -25,7 +25,8 @@ namespace Realtrend.Services
             if (response.IsSuccessStatusCode)
             {
                 var addresses = await response.Content.ReadFromJsonAsync<IEnumerable<DataForsyningAddresse>>();
-                return addresses ?? Enumerable.Empty<DataForsyningAddresse>();
+                DataForsyningAddresse actualAddress = addresses.First();
+                return actualAddress;
             }
             else
             {

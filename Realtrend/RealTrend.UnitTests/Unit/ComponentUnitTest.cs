@@ -1,10 +1,10 @@
 using Bunit;
 using FluentAssertions;
-using Realtrend.Components;
 using Moq;
 using Realtrend.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Realtrend.Library.Interfaces;
+using Realtrend.Components;
 
 namespace RealTrend.UnitTests.Unit
 {

@@ -14,7 +14,11 @@ namespace RealTrend.UnitTests.DataClasses
         {
             yield return new object[] { "Testgade 1", true };
             yield return new object[] { "123 Main Street", false };
-            // Add more test cases here
+            yield return new object[] { "12 Seebladsgade", false };
+            yield return new object[] { "123 Main Street", false };
+            yield return new object[] { "123 Main Street", false };
+
+
         }
 
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();

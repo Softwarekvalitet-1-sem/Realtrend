@@ -28,10 +28,6 @@ namespace RealTrend.UnitTests.TestData
             _httpClient = httpClient;
         }
 
-
-
-
-
     }
 }
 

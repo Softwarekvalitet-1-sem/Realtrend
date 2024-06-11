@@ -6,6 +6,6 @@ namespace Realtrend.Library.Interfaces
 {
     public interface IDataForsyningService
     {
-        Task<IEnumerable<DataForsyningAddresse>> GetDataForsyningAddressAsync(string address);
+        Task<DataForsyningAddresse> GetDataForsyningAddressAsync(string address);
     }
 }
