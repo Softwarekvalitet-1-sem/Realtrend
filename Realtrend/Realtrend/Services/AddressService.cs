@@ -24,7 +24,7 @@ namespace Realtrend.Services
             return await _addressValidator.ValidateAddress(address);
         }
 
-        public async Task<IEnumerable<DataForsyningAddresse>> GetDataForsyningAddressAsync(string address)
+        public async Task<DataForsyningAddresse> GetDataForsyningAddressAsync(string address)
         {
             return await _dataForsyningService.GetDataForsyningAddressAsync(address);
         }

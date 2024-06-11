@@ -11,6 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 using System.Collections.Generic;
+using System.Net.Http.Json;
 
 namespace RealTrend.UnitTests.Unit
 {
@@ -25,17 +26,15 @@ namespace RealTrend.UnitTests.Unit
         [InlineData("Seebladsgade 1", "66a973e3-a800-4e8d-869a-879621bcf3bc")]
         public async Task GetIdFromAddress_ValidAddress_ReturnsCorrectId(string address, string expectedId)
         {
-            // Arrange
+            // Arrange: Set up the mock HttpMessageHandler to simulate the API response.
             var mockHttpMessageHandler = new Mock<HttpMessageHandler>();
             var response = new HttpResponseMessage
             {
                 StatusCode = HttpStatusCode.OK,
-                Content = new StringContent(JsonConvert.SerializeObject(new List<DataForsyningAddresse>
-        {
-            new DataForsyningAddresse { Id = expectedId }
-        }))
+                Content = JsonContent.Create(new List<DataForsyningAddresse> { new DataForsyningAddresse { Id = expectedId } })
             };
 
+            // Configure the mock handler to return the response when SendAsync is called with any HttpRequestMessage.
             mockHttpMessageHandler.Protected()
                 .Setup<Task<HttpResponseMessage>>(
                     "SendAsync",
@@ -45,29 +44,26 @@ namespace RealTrend.UnitTests.Unit
 
             var httpClient = new HttpClient(mockHttpMessageHandler.Object);
 
+            // Create the DataForsyningService with the mocked HttpClient.
+            var dataForsyningService = new DataForsyningService(httpClient);
+
             var mockAddressValidator = new Mock<IAddressValidator>();
-            var mockDataForsyningService = new Mock<IDataForsyningService>();
             var mockDataFordelerService = new Mock<IDataFordelerService>();
 
-            mockDataForsyningService.Setup(x => x.GetDataForsyningAddressAsync(It.IsAny<string>()))
-                .ReturnsAsync(new List<DataForsyningAddresse>
-                {
-            new DataForsyningAddresse { Id = expectedId }
-                });
+            // Create the AddressService, injecting the mock dependencies.
+            var addressService = new AddressService(mockAddressValidator.Object, dataForsyningService, mockDataFordelerService.Object);
 
-            var addressService = new AddressService(mockAddressValidator.Object, mockDataForsyningService.Object, mockDataFordelerService.Object);
-
-            // Act
+            // Act: Call the GetDataForsyningAddressAsync method with the test address.
             var dataForsyningAddress = await addressService.GetDataForsyningAddressAsync(address);
-            var actualId = dataForsyningAddress.First().Id;
 
-            // Assert
-            actualId.Should().Be(expectedId);
+            // Assert: Verify that the Id of the returned address matches the expected Id.
+            dataForsyningAddress.Should().NotBeNull();
+            dataForsyningAddress.Id.Should().Be(expectedId);
         }
 
         [Theory]
         [ClassData(typeof(AddressTestData))]
-        public async Task IsValidAddress_ShouldWorkWithVariousInputs(string address, bool expected)
+        public async Task IsValidAddress_ShouldWorkWithDifferentInputs(string address, bool expected)
         {
             var mockAddressValidator = new Mock<IAddressValidator>();
             mockAddressValidator.Setup(v => v.ValidateAddress(It.IsAny<string>())).ReturnsAsync(expected);
